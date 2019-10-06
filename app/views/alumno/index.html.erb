@@ -1,0 +1,15 @@
+<% if user_signed_in? %>
+Agregar lista de cursos del alumno
+	<% if 1 === @currentUser  %>
+	 <p>Alumno</p>
+	 <p>Nombre: <%= current_user.nombre %> <%= current_user.apellido %></p>
+	 <p>Correo: <%= current_user.email %></p>
+	
+	 <p>Agregar lista de evaluaciones</p>
+	<% else %>
+
+	<p>No es alumno</p>
+
+	<% end %>
+
+<% end %>

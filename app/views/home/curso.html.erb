@@ -1,1 +1,6 @@
-<h1>"Pagina Cursosssssssss" </h1>
+<% if user_signed_in? %>
+	<h1>"Pagina del foro" </h1>
+	<p> <%= current_user.tipouser %> </p>
+<% else %>
+	<h1>"Pagina sin secion" </h1>
+<% end %>

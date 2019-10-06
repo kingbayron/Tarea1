@@ -1,8 +1,10 @@
 <h1>Pagina principal</h1>
 <% @users.each do |f| %>
-	<% if f.tipouser==nil %>
-		<p><%= "nil" %></p>
-	<% end %>
 	<p><%= f.id %></p>
+	<% if f.tipouser==nil %>
+		<p>Tipo Usuario <%= "nil" %></p>
+	<% else %>
+		<p>Tipo Usuario <%= f.tipouser %></p>
+	<%end%>
 <% end %>
 <p>Find me in app/views/home/index.html.erb</p>

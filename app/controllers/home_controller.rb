@@ -4,5 +4,6 @@ class HomeController < ApplicationController
   	@users = User.all.order(:id)
   end
   def curso
+  	@asignatura = Asignatura.all
   end
 end

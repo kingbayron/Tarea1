@@ -1,0 +1,15 @@
+<% if user_signed_in? %>
+Agregar lista de asignaturas que imparte el profesor
+	<% if 2 === @currentUser  %>
+	 <p>Profesor</p>
+	 <p>Nombre: <%= current_user.nombre %> <%= current_user.apellido %></p>
+	 <p>Correo: <%= current_user.email %></p>
+
+	 <% @asignaturas.each do |f| %>
+	<% else %>
+
+	<p>No es profesor</p>
+
+	<% end %>
+
+<% end %>

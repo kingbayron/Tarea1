@@ -11,8 +11,8 @@
     <%= f.text_field :apellido %>
   </div>
   <div class="field">
-    <%= f.label :Tipo_usuario %><br />
-    <%= f.number_field :tipouser %>
+    <%= f.label :Tipo_usuario_1_para_alumno_2_para_profesor %><br />
+    <%= f.number_field :tipouser ,min: 1 , max: 2%>
   </div>
   <div class="field">
     <%= f.label :Correo %><br />
