@@ -3470,3 +3470,758 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.3ms | Allocations: 8250)
 
 
+Started GET "/" for 127.0.0.1 at 2019-10-06 20:07:52 -0300
+  [1m[35m (36.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/kingbayron/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/kingbayron/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 56.7ms | Allocations: 309)
+Completed 200 OK in 99ms (Views: 61.4ms | ActiveRecord: 0.0ms | Allocations: 1731)
+
+
+Started GET "/alumno" for 127.0.0.1 at 2019-10-06 20:10:29 -0300
+Processing by AlumnoController#index as HTML
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.0ms | Allocations: 1782)
+
+
+  
+NoMethodError (undefined method `tipouser' for nil:NilClass):
+  
+app/controllers/alumno_controller.rb:3:in `index'
+Started GET "/alumno" for 127.0.0.1 at 2019-10-06 20:11:33 -0300
+Processing by AlumnoController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1650)
+
+
+  
+NoMethodError (undefined method `tipouser' for nil:NilClass):
+  
+app/controllers/alumno_controller.rb:3:in `index'
+Started GET "/alumno" for 127.0.0.1 at 2019-10-06 20:11:40 -0300
+Processing by AlumnoController#index as HTML
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 1680)
+
+
+  
+NoMethodError (undefined method `tipouser' for nil:NilClass):
+  
+app/controllers/alumno_controller.rb:3:in `index'
+Started GET "/profesor" for 127.0.0.1 at 2019-10-06 20:12:00 -0300
+Processing by ProfesorController#index as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 954)
+
+
+  
+NoMethodError (undefined method `tipouser' for nil:NilClass):
+  
+app/controllers/profesor_controller.rb:3:in `index'
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-10-06 20:12:27 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.3ms | Allocations: 207)
+  Rendered devise/shared/_links.html.erb (Duration: 4.1ms | Allocations: 521)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 58.1ms | Allocations: 5845)
+Completed 200 OK in 2370ms (Views: 2241.8ms | ActiveRecord: 105.2ms | Allocations: 1261278)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-10-06 20:12:34 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 204)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1773)
+Completed 200 OK in 46ms (Views: 23.2ms | ActiveRecord: 0.0ms | Allocations: 9375)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-10-06 20:12:37 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"wK3EcNePIGDgY93ikJDXZVnxZL2Wx0KTFmQJaySysCLXekqF5NoGcga1s39s6D4xa7GbzITtPhA9Ekdz7WmrXQ==", "user"=>{"email"=>"kingbayron@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (32.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "kingbayron@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 485ms (ActiveRecord: 32.4ms | Allocations: 5539)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-06 20:12:38 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/kingbayron/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/kingbayron/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.8ms | Allocations: 184)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 931)
+
+
+Started GET "/alumno" for 127.0.0.1 at 2019-10-06 20:12:44 -0300
+Processing by AlumnoController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/alumno_controller.rb:3:in `index'
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 0.6ms | Allocations: 3520)
+
+
+  
+NoMethodError (undefined method `curso_id' for #<User:0x00007fd091434090>):
+  
+app/controllers/alumno_controller.rb:4:in `index'
+Started GET "/alumno" for 127.0.0.1 at 2019-10-06 20:13:03 -0300
+Processing by AlumnoController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/alumno_controller.rb:3:in `index'
+Completed 500 Internal Server Error in 130ms (ActiveRecord: 27.9ms | Allocations: 11826)
+
+
+  
+NoMethodError (undefined method `cursoid' for #<User:0x00007fd09028ff60>):
+  
+app/controllers/alumno_controller.rb:4:in `index'
+Started GET "/alumno" for 127.0.0.1 at 2019-10-06 20:13:13 -0300
+Processing by AlumnoController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/alumno_controller.rb:3:in `index'
+Completed 500 Internal Server Error in 114ms (ActiveRecord: 11.9ms | Allocations: 11639)
+
+
+  
+NoMethodError (undefined method `curso' for #<User:0x00007fd084a23210>):
+  
+app/controllers/alumno_controller.rb:4:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8119508980448988780)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddColumnsToUsers2 (20191006231844)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (18.8ms)[0m  [1m[35mALTER TABLE "users2s" ADD "curso_id" bigint NOT NULL[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (10.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8119508980448988780)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8119508980448988780)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddColumnsToUsers (20191006232228)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (67.2ms)[0m  [1m[35mALTER TABLE "users" ADD "curso_id" bigint NOT NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8119508980448988780)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8119508980448988780)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddColumnsToUsers (20191006232228)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "curso_id" bigint[0m
+  [1m[35m (104.8ms)[0m  [1m[35mCREATE  INDEX  "index_users_on_curso_id" ON "users"  ("curso_id")[0m
+  [1m[35m (68.5ms)[0m  [1m[35mALTER TABLE "users" ADD CONSTRAINT "fk_rails_cc26330e95"
+FOREIGN KEY ("curso_id")
+  REFERENCES "cursos" ("id")
+[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191006232228"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (25.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8119508980448988780)[0m
+  [1m[35m (8.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/alumno" for 127.0.0.1 at 2019-10-06 20:24:29 -0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AlumnoController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/alumno_controller.rb:3:in `index'
+Completed 500 Internal Server Error in 161ms (ActiveRecord: 17.9ms | Allocations: 13186)
+
+
+  
+NameError (uninitialized constant AlumnoController::Asignaturas):
+  
+app/controllers/alumno_controller.rb:5:in `index'
+Started GET "/alumno" for 127.0.0.1 at 2019-10-06 20:24:39 -0300
+Processing by AlumnoController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/alumno_controller.rb:3:in `index'
+  Rendering alumno/index.html.erb within layouts/application
+  Rendered alumno/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1150)
+Completed 500 Internal Server Error in 109ms (ActiveRecord: 12.7ms | Allocations: 13279)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% if user_signed_in? %>
+Agregar lista de cursos del alumno
+	<% if 1 === @currentUser  %>
+	 <p>Alumno</p>
+	 <p>Nombre: <%= current_user.nombre %> <%= current_user.apellido %></p>
+	 <p>Correo: <%= current_user.email %></p>
+	
+	 <p>ASignaturas a las que pertenece</p>
+	 <% @asignaturas.each do |f| %>
+	 <% if f.curso_id ==  @currentUsercurso %>
+	 	<p>Asignatura f.nombre</p>
+	<% else %>
+
+	<p>No es alumno</p>
+
+	<% end %>
+
+<% end %>
+):
+1:    <% if user_signed_in? %>
+2:    Agregar lista de cursos del alumno
+3:    	<% if 1 === @currentUser  %>
+4:    	 <p>Alumno</p>
+5:    	 <p>Nombre: <%= current_user.nombre %> <%= current_user.apellido %></p>
+6:    	 <p>Correo: <%= current_user.email %></p>
+7:    	
+8:    	 <p>ASignaturas a las que pertenece</p>
+9:    	 <% @asignaturas.each do |f| %>
+10:    	 <% if f.curso_id ==  @currentUsercurso %>
+11:    	 	<p>Asignatura f.nombre</p>
+12:    	<% else %>
+13:    
+14:    	<p>No es alumno</p>
+15:    
+16:    	<% end %>
+17:    
+18:    <% end %>
+  
+app/views/alumno/index.html.erb:20: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:20: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:20: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:20: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:20: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:20: syntax error, unexpected end-of-input, expecting end
+Started GET "/alumno" for 127.0.0.1 at 2019-10-06 20:25:19 -0300
+Processing by AlumnoController#index as HTML
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/alumno_controller.rb:3:in `index'
+  Rendering alumno/index.html.erb within layouts/application
+  Rendered alumno/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1158)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 2.8ms | Allocations: 3368)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% if user_signed_in? %>
+Agregar lista de cursos del alumno
+	<% if 1 === @currentUser  %>
+	 <p>Alumno</p>
+	 <p>Nombre: <%= current_user.nombre %> <%= current_user.apellido %></p>
+	 <p>Correo: <%= current_user.email %></p>
+	
+	 <p>ASignaturas a las que pertenece</p>
+	 <% @asignaturas.each do |f| %>
+	 <% if f.curso_id ==  @currentUsercurso %>
+	 	<p>Asignatura f.nombres</p>
+	 <% end %>
+	<% else %>
+
+	<p>No es alumno</p>
+
+	<% end %>
+
+<% end %>
+):
+1:    <% if user_signed_in? %>
+2:    Agregar lista de cursos del alumno
+3:    	<% if 1 === @currentUser  %>
+4:    	 <p>Alumno</p>
+5:    	 <p>Nombre: <%= current_user.nombre %> <%= current_user.apellido %></p>
+6:    	 <p>Correo: <%= current_user.email %></p>
+7:    	
+8:    	 <p>ASignaturas a las que pertenece</p>
+9:    	 <% @asignaturas.each do |f| %>
+10:    	 <% if f.curso_id ==  @currentUsercurso %>
+11:    	 	<p>Asignatura f.nombres</p>
+12:    	 <% end %>
+13:    	<% else %>
+14:    
+15:    	<p>No es alumno</p>
+16:    
+17:    	<% end %>
+18:    
+19:    <% end %>
+  
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+Started GET "/alumno" for 127.0.0.1 at 2019-10-06 20:25:49 -0300
+Processing by AlumnoController#index as HTML
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/alumno_controller.rb:3:in `index'
+  Rendering alumno/index.html.erb within layouts/application
+  Rendered alumno/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1157)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 3.0ms | Allocations: 3349)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% if user_signed_in? %>
+Agregar lista de cursos del alumno
+	<% if 1 === @currentUser  %>
+	 <p>Alumno</p>
+	 <p>Nombre: <%= current_user.nombre %> <%= current_user.apellido %></p>
+	 <p>Correo: <%= current_user.email %></p>
+	
+	 <p>ASignaturas a las que pertenece</p>
+	 <% @asignaturas.each do |f| %>
+	 <% if f.curso_id ==  @currentUsercurso %>
+	 	<p>Asignatura f.nombres</p>
+	 <% end %>
+	<% else %>
+
+	<p>No es alumno</p>
+
+	<% end %>
+
+<% end %>
+):
+1:    <% if user_signed_in? %>
+2:    Agregar lista de cursos del alumno
+3:    	<% if 1 === @currentUser  %>
+4:    	 <p>Alumno</p>
+5:    	 <p>Nombre: <%= current_user.nombre %> <%= current_user.apellido %></p>
+6:    	 <p>Correo: <%= current_user.email %></p>
+7:    	
+8:    	 <p>ASignaturas a las que pertenece</p>
+9:    	 <% @asignaturas.each do |f| %>
+10:    	 <% if f.curso_id ==  @currentUsercurso %>
+11:    	 	<p>Asignatura f.nombres</p>
+12:    	 <% end %>
+13:    	<% else %>
+14:    
+15:    	<p>No es alumno</p>
+16:    
+17:    	<% end %>
+18:    
+19:    <% end %>
+  
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+Started GET "/alumno" for 127.0.0.1 at 2019-10-06 20:39:52 -0300
+Processing by AlumnoController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/alumno_controller.rb:3:in `index'
+  Rendering alumno/index.html.erb within layouts/application
+  Rendered alumno/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1158)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 3.7ms | Allocations: 3488)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% if user_signed_in? %>
+Agregar lista de cursos del alumno
+	<% if 1 === @currentUser  %>
+	 	<p>Alumno</p>
+	 	<p>Nombre: <%= current_user.nombre %> <%= current_user.apellido %></p>
+	 	<p>Correo: <%= current_user.email %></p>
+	
+	 	<p>ASignaturas a las que pertenece</p>
+	 	<% @asignaturas.each do |f| %>
+	 	<% if f.curso_id ==  @currentUsercurso %>
+	 		<p>Asignatura f.nombres</p>
+	 	<% end %>
+	<% else %>
+
+	<p>No es alumno</p>
+
+	<% end %>
+
+<% end %>
+):
+1:    <% if user_signed_in? %>
+2:    Agregar lista de cursos del alumno
+3:    	<% if 1 === @currentUser  %>
+4:    	 	<p>Alumno</p>
+5:    	 	<p>Nombre: <%= current_user.nombre %> <%= current_user.apellido %></p>
+6:    	 	<p>Correo: <%= current_user.email %></p>
+7:    	
+8:    	 	<p>ASignaturas a las que pertenece</p>
+9:    	 	<% @asignaturas.each do |f| %>
+10:    	 	<% if f.curso_id ==  @currentUsercurso %>
+11:    	 		<p>Asignatura f.nombres</p>
+12:    	 	<% end %>
+13:    	<% else %>
+14:    
+15:    	<p>No es alumno</p>
+16:    
+17:    	<% end %>
+18:    
+19:    <% end %>
+  
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+Started GET "/alumno" for 127.0.0.1 at 2019-10-06 20:40:51 -0300
+Processing by AlumnoController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/alumno_controller.rb:3:in `index'
+  Rendering alumno/index.html.erb within layouts/application
+  Rendered alumno/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1157)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.3ms | Allocations: 3349)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% if user_signed_in? %>
+Agregar lista de cursos del alumno
+	<% if 1 === @currentUser  %>
+	 	<p>Alumno</p>
+	 	<p>Nombre: <%= current_user.nombre %> <%= current_user.apellido %></p>
+	 	<p>Correo: <%= current_user.email %></p>
+	
+	 	<p>ASignaturas a las que pertenece</p>
+	 	<% @asignaturas.each do |f| %>
+	 	<% if f.curso_id ===  @currentUsercurso %>
+	 		<p>Asignatura f.nombres</p>
+	 	<% end %>
+	<% else %>
+
+	<p>No es alumno</p>
+
+	<% end %>
+
+<% end %>
+):
+1:    <% if user_signed_in? %>
+2:    Agregar lista de cursos del alumno
+3:    	<% if 1 === @currentUser  %>
+4:    	 	<p>Alumno</p>
+5:    	 	<p>Nombre: <%= current_user.nombre %> <%= current_user.apellido %></p>
+6:    	 	<p>Correo: <%= current_user.email %></p>
+7:    	
+8:    	 	<p>ASignaturas a las que pertenece</p>
+9:    	 	<% @asignaturas.each do |f| %>
+10:    	 	<% if f.curso_id ===  @currentUsercurso %>
+11:    	 		<p>Asignatura f.nombres</p>
+12:    	 	<% end %>
+13:    	<% else %>
+14:    
+15:    	<p>No es alumno</p>
+16:    
+17:    	<% end %>
+18:    
+19:    <% end %>
+  
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+Started GET "/alumno" for 127.0.0.1 at 2019-10-06 20:41:29 -0300
+Processing by AlumnoController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/alumno_controller.rb:3:in `index'
+  Rendering alumno/index.html.erb within layouts/application
+  Rendered alumno/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1144)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.5ms | Allocations: 2489)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% if user_signed_in? %>
+Agregar lista de cursos del alumno
+	<% if 1 === @currentUser  %>
+	 	<p>Alumno</p>
+	 	<p>Nombre: <%= current_user.nombre %> <%= current_user.apellido %></p>
+	 	<p>Correo: <%= current_user.email %></p>
+	
+	 	<p>ASignaturas a las que pertenece</p>
+	 	<% @asignaturas.each do |f| %>
+	 	<% if f.curso_id ===  @currentUsercurso %>
+	 		<p>Asignatura f.nombres</p>
+	 	<% end %>
+	<% else %>
+
+	<p>No es alumno</p>
+
+	<% end %>
+
+<% end %>
+):
+1:    <% if user_signed_in? %>
+2:    Agregar lista de cursos del alumno
+3:    	<% if 1 === @currentUser  %>
+4:    	 	<p>Alumno</p>
+5:    	 	<p>Nombre: <%= current_user.nombre %> <%= current_user.apellido %></p>
+6:    	 	<p>Correo: <%= current_user.email %></p>
+7:    	
+8:    	 	<p>ASignaturas a las que pertenece</p>
+9:    	 	<% @asignaturas.each do |f| %>
+10:    	 	<% if f.curso_id ===  @currentUsercurso %>
+11:    	 		<p>Asignatura f.nombres</p>
+12:    	 	<% end %>
+13:    	<% else %>
+14:    
+15:    	<p>No es alumno</p>
+16:    
+17:    	<% end %>
+18:    
+19:    <% end %>
+  
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+Started GET "/profesor" for 127.0.0.1 at 2019-10-06 20:41:35 -0300
+Processing by ProfesorController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesor_controller.rb:3:in `index'
+  Rendering profesor/index.html.erb within layouts/application
+  Rendered profesor/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1085)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.3ms | Allocations: 3096)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% if user_signed_in? %>
+Agregar lista de asignaturas que imparte el profesor
+	<% if 2 === @currentUser  %>
+	 <p>Profesor</p>
+	 <p>Nombre: <%= current_user.nombre %> <%= current_user.apellido %></p>
+	 <p>Correo: <%= current_user.email %></p>
+
+	 <% @asignaturas.each do |f| %>
+	<% else %>
+
+	<p>No es profesor</p>
+
+	<% end %>
+
+<% end %>
+):
+1:    <% if user_signed_in? %>
+2:    Agregar lista de asignaturas que imparte el profesor
+3:    	<% if 2 === @currentUser  %>
+4:    	 <p>Profesor</p>
+5:    	 <p>Nombre: <%= current_user.nombre %> <%= current_user.apellido %></p>
+6:    	 <p>Correo: <%= current_user.email %></p>
+7:    
+8:    	 <% @asignaturas.each do |f| %>
+9:    	<% else %>
+10:    
+11:    	<p>No es profesor</p>
+12:    
+13:    	<% end %>
+14:    
+15:    <% end %>
+  
+app/views/profesor/index.html.erb:9: else without rescue is useless
+app/views/profesor/index.html.erb:17: syntax error, unexpected end-of-input, expecting end
+app/views/profesor/index.html.erb:9: else without rescue is useless
+app/views/profesor/index.html.erb:17: syntax error, unexpected end-of-input, expecting end
+app/views/profesor/index.html.erb:9: else without rescue is useless
+app/views/profesor/index.html.erb:17: syntax error, unexpected end-of-input, expecting end
+app/views/profesor/index.html.erb:9: else without rescue is useless
+app/views/profesor/index.html.erb:17: syntax error, unexpected end-of-input, expecting end
+app/views/profesor/index.html.erb:9: else without rescue is useless
+app/views/profesor/index.html.erb:17: syntax error, unexpected end-of-input, expecting end
+app/views/profesor/index.html.erb:9: else without rescue is useless
+app/views/profesor/index.html.erb:17: syntax error, unexpected end-of-input, expecting end
+Started GET "/bienvenida" for 127.0.0.1 at 2019-10-06 20:42:02 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC[0m
+  ↳ app/views/home/index.html.erb:2
+  Rendered home/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 891)
+Completed 200 OK in 2001ms (Views: 1998.6ms | ActiveRecord: 1.7ms | Allocations: 1247116)
+
+
+Started GET "/alumno" for 127.0.0.1 at 2019-10-06 20:42:21 -0300
+Processing by AlumnoController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/alumno_controller.rb:3:in `index'
+  Rendering alumno/index.html.erb within layouts/application
+  Rendered alumno/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1151)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.5ms | Allocations: 2487)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% if user_signed_in? %>
+Agregar lista de cursos del alumno
+	<% if 1 === @currentUser  %>
+	 	<p>Alumno</p>
+	 	<p>Nombre: <%= current_user.nombre %> <%= current_user.apellido %></p>
+	 	<p>Correo: <%= current_user.email %></p>
+	
+	 	<p>ASignaturas a las que pertenece</p>
+	 	<% @asignaturas.each do |f| %>
+	 	<% if f.curso_id ===  @currentUsercurso %>
+	 		<p>Asignatura f.nombres</p>
+	 	<% end %>
+	<% else %>
+
+	<p>No es alumno</p>
+
+	<% end %>
+
+<% end %>
+):
+1:    <% if user_signed_in? %>
+2:    Agregar lista de cursos del alumno
+3:    	<% if 1 === @currentUser  %>
+4:    	 	<p>Alumno</p>
+5:    	 	<p>Nombre: <%= current_user.nombre %> <%= current_user.apellido %></p>
+6:    	 	<p>Correo: <%= current_user.email %></p>
+7:    	
+8:    	 	<p>ASignaturas a las que pertenece</p>
+9:    	 	<% @asignaturas.each do |f| %>
+10:    	 	<% if f.curso_id ===  @currentUsercurso %>
+11:    	 		<p>Asignatura f.nombres</p>
+12:    	 	<% end %>
+13:    	<% else %>
+14:    
+15:    	<p>No es alumno</p>
+16:    
+17:    	<% end %>
+18:    
+19:    <% end %>
+  
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:13: else without rescue is useless
+app/views/alumno/index.html.erb:21: syntax error, unexpected end-of-input, expecting end
+Started GET "/alumno" for 127.0.0.1 at 2019-10-06 20:42:59 -0300
+Processing by AlumnoController#index as HTML
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/alumno_controller.rb:3:in `index'
+  Rendering alumno/index.html.erb within layouts/application
+  Rendered alumno/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1166)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 5.2ms | Allocations: 3364)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% if user_signed_in? %>
+Agregar lista de cursos del alumno
+	<% if 1 === @currentUser  %>
+	 	<p>Alumno</p>
+	 	<p>Nombre: <%= current_user.nombre %> <%= current_user.apellido %></p>
+	 	<p>Correo: <%= current_user.email %></p>
+	
+	 	<p>ASignaturas a las que pertenece</p>
+	 	<% @asignaturas.each do |f| %>
+	 	<% if f.curso_id ===  @currentUsercurso %>
+	 		<p>Asignatura f.nombres</p>
+	 	<% end %>
+	 	<p>----------------</p>
+	<% else %>
+
+	<p>No es alumno</p>
+
+	<% end %>
+
+<% end %>
+):
+1:    <% if user_signed_in? %>
+2:    Agregar lista de cursos del alumno
+3:    	<% if 1 === @currentUser  %>
+4:    	 	<p>Alumno</p>
+5:    	 	<p>Nombre: <%= current_user.nombre %> <%= current_user.apellido %></p>
+6:    	 	<p>Correo: <%= current_user.email %></p>
+7:    	
+8:    	 	<p>ASignaturas a las que pertenece</p>
+9:    	 	<% @asignaturas.each do |f| %>
+10:    	 	<% if f.curso_id ===  @currentUsercurso %>
+11:    	 		<p>Asignatura f.nombres</p>
+12:    	 	<% end %>
+13:    	 	<p>----------------</p>
+14:    	<% else %>
+15:    
+16:    	<p>No es alumno</p>
+17:    
+18:    	<% end %>
+19:    
+20:    <% end %>
+  
+app/views/alumno/index.html.erb:14: else without rescue is useless
+app/views/alumno/index.html.erb:22: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:14: else without rescue is useless
+app/views/alumno/index.html.erb:22: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:14: else without rescue is useless
+app/views/alumno/index.html.erb:22: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:14: else without rescue is useless
+app/views/alumno/index.html.erb:22: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:14: else without rescue is useless
+app/views/alumno/index.html.erb:22: syntax error, unexpected end-of-input, expecting end
+app/views/alumno/index.html.erb:14: else without rescue is useless
+app/views/alumno/index.html.erb:22: syntax error, unexpected end-of-input, expecting end
+Started GET "/alumno" for 127.0.0.1 at 2019-10-06 20:45:30 -0300
+Processing by AlumnoController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/alumno_controller.rb:3:in `index'
+  Rendering alumno/index.html.erb within layouts/application
+  Rendered alumno/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 278)
+Completed 200 OK in 44ms (Views: 36.8ms | ActiveRecord: 1.0ms | Allocations: 8495)
+
+
+Started GET "/profesor" for 127.0.0.1 at 2019-10-06 20:49:30 -0300
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProfesorController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesor_controller.rb:3:in `index'
+  Rendering profesor/index.html.erb within layouts/application
+  Rendered profesor/index.html.erb within layouts/application (Duration: 15.9ms | Allocations: 1998)
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 17.2ms | Allocations: 15845)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     5: 	 <p>Nombre: <%= current_user.nombre %> <%= current_user.apellido %></p>
+     6: 	 <p>Correo: <%= current_user.email %></p>
+     7: 
+     8: 	 <% @asignaturas.each do |f| %>
+     9: 	 		<% if f.user_id ===  @currentUserid %>
+    10: 	 			<p>Asignatura f.nombre</p>
+    11: 	 		<% end %>
+  
+app/views/profesor/index.html.erb:8
+Started GET "/profesor" for 127.0.0.1 at 2019-10-06 20:49:52 -0300
+Processing by ProfesorController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesor_controller.rb:3:in `index'
+  Rendering profesor/index.html.erb within layouts/application
+  [1m[36mAsignatura Load (0.5ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas"[0m
+  ↳ app/views/profesor/index.html.erb:8
+  Rendered profesor/index.html.erb within layouts/application (Duration: 17.1ms | Allocations: 1028)
+Completed 200 OK in 1958ms (Views: 1869.6ms | ActiveRecord: 35.4ms | Allocations: 1257107)
+
+
+Started GET "/profesor" for 127.0.0.1 at 2019-10-06 20:50:27 -0300
+Processing by ProfesorController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesor_controller.rb:3:in `index'
+  Rendering profesor/index.html.erb within layouts/application
+  [1m[36mAsignatura Load (6.2ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas"[0m
+  ↳ app/views/profesor/index.html.erb:10
+  Rendered profesor/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 897)
+Completed 200 OK in 58ms (Views: 38.5ms | ActiveRecord: 10.9ms | Allocations: 9249)
+
+

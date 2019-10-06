@@ -1,6 +1,7 @@
 class ProfesorController < ApplicationController
   def index
   	@currentUser = current_user.tipouser
-  	@Asignaturas = Asignatura.all
+  	@currentUserid = current_user.id
+  	@asignaturas = Asignatura.all
   end
 end
