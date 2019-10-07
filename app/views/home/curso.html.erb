@@ -1,5 +1,12 @@
 <% if user_signed_in? %>
 	<h1>"Pagina del foro" </h1>
+	<% @posts.each do |f| %>
+		<p>-----------------------</p>
+		<p>Titulo: <%= f.titulo %> </p>
+		<p>Asignatura: <%= f.asignatura_id %> </p>
+		<p> <%= f.comentario %> </p>
+		<p>-----------------------</p>
+	<%end%>
 <% else %>
-	<h1>"Pagina sin secion" </h1>
+	<h1>"No a iniciado sesion" </h1>
 <% end %>

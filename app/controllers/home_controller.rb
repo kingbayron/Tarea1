@@ -5,5 +5,7 @@ class HomeController < ApplicationController
   	@currentUser = current_user.tipouser
   end
   def curso
+  	@asignaturascurso = Asignatura.all.where :curso_id => current_user.curso_id
+  	@posts = Post.all.where :asignatura_id => @asignaturascurso.ids
   end
 end
