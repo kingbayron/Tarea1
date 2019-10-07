@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  get "/profesor", to:"profesor#index"
+	root to:"home#index"
+  get "profesores.:id", to:"profesors#index"
+  get "profesores", to:"profesors#todos"
+  get "/profesor.:id", to:"profesors#index"
   get "/alumno", to:"alumno#index"
   get "/bienvenida", to: "home#index"
   get "/curso", to:"home#curso" 

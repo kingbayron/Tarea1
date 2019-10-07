@@ -15,6 +15,10 @@
     <%= f.number_field :tipouser ,min: 1 , max: 2%>
   </div>
   <div class="field">
+    <%= f.label :Curso_al_que_pertenece %><br />
+    <%= f.number_field :curso_id ,min: 1 , max: 10%>
+  </div>
+  <div class="field">
     <%= f.label :Correo %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>

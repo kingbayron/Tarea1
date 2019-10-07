@@ -1,10 +1,10 @@
-<h1>Pagina principal</h1>
-<% @users.each do |f| %>
-	<p><%= f.id %></p>
-	<% if f.tipouser==nil %>
-		<p>Tipo Usuario <%= "nil" %></p>
-	<% else %>
-		<p>Tipo Usuario <%= f.tipouser %></p>
+<% if user_signed_in? %>
+	<% if 2 === @currentUser  %>
+		profesor
+		<%= link_to "Mi perfil", profesores_path(current_user)%>
+	<%else%>
+		alumno
+		<%= link_to "Mis Asignaturas", alumno_path()%>
+		<%= link_to "Mi Curso", curso_path()%>
 	<%end%>
 <% end %>
-<p>Find me in app/views/home/index.html.erb</p>

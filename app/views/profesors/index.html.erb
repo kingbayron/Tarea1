@@ -1,0 +1,23 @@
+<% if user_signed_in? %>
+	<% if 2 === @currentUser  %>
+	 <p>Profesor</p>
+	 <p>Nombre: <%= current_user.nombre %> <%= current_user.apellido %></p>
+	 <p>Correo: <%= current_user.email %></p>
+
+
+	 <p>Asignaturas que imparte</p>
+	 <% @asignaturas.each do |f| %>
+	 		<% if f.user_id ===  @currentUserid %>
+	 			<p>Asignatura f.nombre</p>
+	 		<% end %>
+	 	<p>----------------</p>
+	 	<% end %>
+	<% else %>
+	<p>Profesor</p>
+	<p>Nombre: <%= @currentUserid.nombre %> <%= @currentUserid.apellido %></p>
+	<p>Correo: <%= @currentUserid.email %></p>
+	Nota promedio profesor: <%= @promedioevaluaciones %>
+
+	<% end %>
+
+<% end %>

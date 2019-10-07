@@ -1,0 +1,4 @@
+<% @profesores.each do |f| %>
+ 	<p><%=f.id%></p>
+ 	<%= link_to "Profesor",alumno_path(f) %>
+<% end %>

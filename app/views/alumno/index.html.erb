@@ -1,16 +1,14 @@
 <% if user_signed_in? %>
-Agregar lista de cursos del alumno
 	<% if 1 === @currentUser  %>
 	 	<p>Alumno</p>
 	 	<p>Nombre: <%= current_user.nombre %> <%= current_user.apellido %></p>
 	 	<p>Correo: <%= current_user.email %></p>
 	
-	 	<p>ASignaturas a las que pertenece</p>
-	 	<% @asignaturas.each do |f| %>
-	 		<% if f.curso_id ===  @currentUsercurso %>
-	 			<p>Asignatura f.nombre</p>
-	 		<% end %>
-	 	<p>----------------</p>
+	 	<p>Asignaturas a las que pertenece</p>
+	 	<% @Asignaturas.each do |f| %>
+	 			<p>Asignatura <%=f.nombre%> <%= link_to "Ir", profesores_path(f)%></p>
+
+	 		<p>----------------</p>
 	 	<% end %>
 	<% else %>
 
