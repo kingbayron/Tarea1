@@ -2,7 +2,7 @@ class ProfesorsController < ApplicationController
   def index
   	@currentUser = current_user.tipouser
   	@currentUserid = User.find(params[:id])
-  	@asignaturas = Asignatura.all
+  	@asignaturas = Asignatura.all.where :user_id => @currentUserid
   	@promedioevaluaciones = Evaluacion.average(:nota)
   end
   def todos

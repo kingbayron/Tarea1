@@ -7011,3 +7011,2646 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 71ms (Views: 67.8ms | ActiveRecord: 0.2ms | Allocations: 8008)
 
 
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-10-10 16:32:48 -0300
+  [1m[35m (63.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 14.7ms | Allocations: 207)
+  Rendered devise/shared/_links.html.erb (Duration: 21.8ms | Allocations: 521)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 335.0ms | Allocations: 6064)
+Completed 200 OK in 8193ms (Views: 7705.7ms | ActiveRecord: 231.0ms | Allocations: 1262727)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-10 16:33:08 -0300
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 1125)
+
+
+  
+NoMethodError (undefined method `tipouser' for nil:NilClass):
+  
+app/controllers/home_controller.rb:5:in `index'
+Started GET "/" for 127.0.0.1 at 2019-10-10 16:37:01 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 227)
+Completed 200 OK in 44ms (Views: 35.1ms | ActiveRecord: 0.0ms | Allocations: 7845)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-10 16:39:14 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 508)
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.0ms | Allocations: 7852)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-10 16:40:17 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 495)
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.0ms | Allocations: 7833)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-10 16:40:40 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 489)
+Completed 200 OK in 32ms (Views: 31.6ms | ActiveRecord: 0.0ms | Allocations: 7813)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-10-10 16:40:42 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 4.8ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 2.0ms | Allocations: 467)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 44.5ms | Allocations: 3105)
+Completed 200 OK in 192ms (Views: 127.4ms | ActiveRecord: 11.4ms | Allocations: 19173)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-10-10 16:40:46 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 203)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 26.6ms | Allocations: 1768)
+Completed 200 OK in 80ms (Views: 77.4ms | ActiveRecord: 0.0ms | Allocations: 9284)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-10 16:55:39 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 509)
+Completed 200 OK in 44ms (Views: 42.4ms | ActiveRecord: 0.0ms | Allocations: 7850)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-10 16:55:44 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 160)
+Completed 200 OK in 37ms (Views: 24.4ms | ActiveRecord: 0.0ms | Allocations: 6377)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2019-10-10 16:55:46 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/ideas"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-10-10 16:55:48 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 28ms (Views: 27.3ms | ActiveRecord: 0.0ms | Allocations: 6385)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-10 16:59:06 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 418)
+Completed 200 OK in 31ms (Views: 28.5ms | ActiveRecord: 0.0ms | Allocations: 7749)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-10-10 16:59:09 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 521)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 23.1ms | Allocations: 1877)
+Completed 200 OK in 76ms (Views: 74.9ms | ActiveRecord: 0.0ms | Allocations: 9705)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-10-10 16:59:14 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"DJ7E+ZgAlm4YMjuatLBJuCVuMm20pQyvGrcSB9+YkKRGKEiwmUotKMOZb/EseIz5ZQcaiA/gkfTrDiavPS+x+A==", "user"=>{"email"=>"correo1@correo.cl", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (74.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "correo1@correo.cl"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 445ms (ActiveRecord: 74.4ms | Allocations: 5563)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-10 16:59:14 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 156)
+Completed 200 OK in 18ms (Views: 11.8ms | ActiveRecord: 0.2ms | Allocations: 7218)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-10 16:59:44 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 447)
+Completed 200 OK in 78ms (Views: 23.3ms | ActiveRecord: 0.3ms | Allocations: 8604)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-10-10 17:00:00 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"dGG+ugJZF+ca75JiJo0X1Rc4dQyrnF65z9JSpUpMCZ9ZXp6RgvhnvqcUv3MRc0aMqnxDx4JrU95VPHEykKXUaA=="}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 80ms (ActiveRecord: 0.9ms | Allocations: 5107)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-10 17:00:00 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 125)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.0ms | Allocations: 6345)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-10-10 17:00:07 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 6.3ms | Allocations: 521)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 14.0ms | Allocations: 1877)
+Completed 200 OK in 78ms (Views: 75.2ms | ActiveRecord: 0.0ms | Allocations: 9710)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-10-10 17:00:10 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"z+tKTKtCb+qhenub3q2EPJT4PIDY732x3x5la56mIvzmZelEwJ6gnWl3e/Sz3hvLj6ip8BtZunfCf8rk4Ot4Tg==", "user"=>{"email"=>"kingbayron@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (6.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "kingbayron@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 385ms (ActiveRecord: 6.6ms | Allocations: 4212)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-10 17:00:10 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 161)
+Completed 200 OK in 29ms (Views: 16.2ms | ActiveRecord: 2.3ms | Allocations: 7209)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-10 17:01:43 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 450)
+Completed 200 OK in 37ms (Views: 32.0ms | ActiveRecord: 0.2ms | Allocations: 8582)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-10 17:01:47 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:4:in `index'
+  [1m[35m (54.3ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:6:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  [1m[36mAsignatura Load (30.9ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas"[0m
+  ↳ app/views/profesors/index.html.erb:14
+  Rendered profesors/index.html.erb within layouts/application (Duration: 50.4ms | Allocations: 4823)
+Completed 200 OK in 182ms (Views: 35.5ms | ActiveRecord: 91.1ms | Allocations: 16077)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-10 17:09:37 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:4:in `index'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:6:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  [1m[36mAsignatura Load (0.3ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/profesors/index.html.erb:14
+  Rendered profesors/index.html.erb within layouts/application (Duration: 25.0ms | Allocations: 4305)
+Completed 200 OK in 159ms (Views: 54.9ms | ActiveRecord: 4.3ms | Allocations: 23659)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-10 17:09:58 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:4:in `index'
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:6:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  [1m[36mAsignatura Load (1.3ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/profesors/index.html.erb:14
+  Rendered profesors/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1120)
+Completed 200 OK in 60ms (Views: 25.8ms | ActiveRecord: 4.7ms | Allocations: 10595)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-10-10 17:10:46 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fF6lSFWknldJUNM7vBmdVv2gzxOLKqyxQ4hjz0asZ0k8S3R5LX/A6T9DoBiihwXuRKzSbybpr3/rqxU4bBBLxg=="}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms (ActiveRecord: 2.5ms | Allocations: 2541)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-10 17:10:46 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 418)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.0ms | Allocations: 7333)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-10-10 17:10:47 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 524)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 28.5ms | Allocations: 1932)
+Completed 200 OK in 75ms (Views: 74.0ms | ActiveRecord: 0.0ms | Allocations: 9786)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-10-10 17:10:51 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"xKgereJMHMj4kg4E2SchVqlwIHqkkHfgfaP7cfp8Zr2FAsl4OUuvRv5WTvF6BzmuLupYHW6lmOWE01VMHBj92A==", "user"=>{"email"=>"correo1@correo.cl", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "correo1@correo.cl"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 267ms (ActiveRecord: 0.4ms | Allocations: 4244)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-10 17:10:51 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 152)
+Completed 200 OK in 34ms (Views: 22.1ms | ActiveRecord: 3.9ms | Allocations: 7198)
+
+
+Started GET "/alumno" for 127.0.0.1 at 2019-10-10 17:10:58 -0300
+Processing by AlumnoController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/alumno_controller.rb:3:in `index'
+  Rendering alumno/index.html.erb within layouts/application
+  [1m[36mAsignatura Load (0.3ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."curso_id" = $1[0m  [["curso_id", 1]]
+  ↳ app/views/alumno/index.html.erb:13
+  Rendered alumno/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 1135)
+Completed 200 OK in 41ms (Views: 33.9ms | ActiveRecord: 0.6ms | Allocations: 8869)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-10 17:11:04 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:4:in `index'
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:6:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  Rendered profesors/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 121)
+Completed 200 OK in 42ms (Views: 15.9ms | ActiveRecord: 5.0ms | Allocations: 8355)
+
+
+Started GET "/curso" for 127.0.0.1 at 2019-10-10 17:11:15 -0300
+Processing by HomeController#curso as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:10:in `curso'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "asignaturas"."id" FROM "asignaturas" WHERE "asignaturas"."curso_id" = $1[0m  [["curso_id", 1]]
+  ↳ app/controllers/home_controller.rb:11:in `curso'
+  Rendering home/curso.html.erb within layouts/application
+  [1m[36mPost Load (77.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."asignatura_id" = $1[0m  [["asignatura_id", 1]]
+  ↳ app/views/home/curso.html.erb:8
+  Rendered home/curso.html.erb within layouts/application (Duration: 119.4ms | Allocations: 4950)
+Completed 200 OK in 203ms (Views: 66.3ms | ActiveRecord: 86.1ms | Allocations: 13986)
+
+
+Started GET "/curso" for 127.0.0.1 at 2019-10-10 17:14:27 -0300
+Processing by HomeController#curso as HTML
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:10:in `curso'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "asignaturas"."id" FROM "asignaturas" WHERE "asignaturas"."curso_id" = $1[0m  [["curso_id", 1]]
+  ↳ app/controllers/home_controller.rb:11:in `curso'
+  Rendering home/curso.html.erb within layouts/application
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."asignatura_id" = $1[0m  [["asignatura_id", 1]]
+  ↳ app/views/home/curso.html.erb:8
+  Rendered home/curso.html.erb within layouts/application (Duration: 4.7ms | Allocations: 749)
+Completed 200 OK in 66ms (Views: 37.0ms | ActiveRecord: 5.3ms | Allocations: 8416)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-10-10 18:48:52 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"M74a0xgtLx/0wZfCszgumz/dsH242XhBlduWrelgQl9+xeoc4meeTtrBX9S785P0jPHRq6mBNPHM/tRJUQ5xAA=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 20ms (ActiveRecord: 1.0ms | Allocations: 2277)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-10 18:48:52 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 120)
+Completed 200 OK in 61ms (Views: 60.1ms | ActiveRecord: 0.0ms | Allocations: 6371)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-10-10 18:49:39 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.5ms | Allocations: 197)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 90.6ms | Allocations: 4665)
+Completed 500 Internal Server Error in 102ms (ActiveRecord: 0.0ms | Allocations: 7019)
+
+
+  
+ActionView::Template::Error (undefined method `{:tipouser=>1}' for #<User:0x000055a748431378>
+Did you mean?  tipouser=):
+    16: 
+    17:   <div class="field">
+    18:     <%= f.label :Tipo_usuario_1_para_alumno_2_para_profesor %><br />
+    19:     <%= f.number_field :tipouser => 1%>
+    20:   </div>
+    21: 
+    22: 
+  
+app/views/devise/registrations/new.html.erb:19
+app/views/devise/registrations/new.html.erb:3
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-10-10 18:49:46 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1388)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 3630)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h2>Registrece</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <%= f.label :Nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :Correo %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+
+  <div class="field">
+    <%= f.label :Tipo_usuario_1_para_alumno_2_para_profesor %><br />
+    <%= f.number_field :tipouser = 1%>
+  </div>
+
+
+
+
+<div class="field">
+    <%= f.label :Nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  
+   
+
+  <div class="field">
+    <%= f.label :Contraseña %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> caracteres minimo)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Confirmacion_contraseña %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+
+):
+1:    <h2>Registrece</h2>
+2:    
+3:    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+4:      <%= render "devise/shared/error_messages", resource: resource %>
+5:    
+6:      <div class="field">
+7:        <%= f.label :Nombre %><br />
+8:        <%= f.text_field :nombre %>
+9:      </div>
+10:      
+11:      <div class="field">
+12:        <%= f.label :Correo %><br />
+13:        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+14:      </div>
+15:    
+16:    
+17:      <div class="field">
+18:        <%= f.label :Tipo_usuario_1_para_alumno_2_para_profesor %><br />
+19:        <%= f.number_field :tipouser = 1%>
+20:      </div>
+21:    
+22:    
+23:    
+24:    
+25:    <div class="field">
+26:        <%= f.label :Nombre %><br />
+27:        <%= f.text_field :nombre %>
+28:      </div>
+29:      
+30:       
+31:    
+32:      <div class="field">
+33:        <%= f.label :Contraseña %>
+34:        <% if @minimum_password_length %>
+35:        <em>(<%= @minimum_password_length %> caracteres minimo)</em>
+36:        <% end %><br />
+37:        <%= f.password_field :password, autocomplete: "new-password" %>
+38:      </div>
+39:    
+40:      <div class="field">
+41:        <%= f.label :Confirmacion_contraseña %><br />
+42:        <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+43:      </div>
+44:    
+45:      <div class="actions">
+46:        <%= f.submit "Sign up" %>
+47:      </div>
+48:    <% end %>
+49:    
+50:    <%= render "devise/shared/links" %>
+  
+app/views/devise/registrations/new.html.erb:19: syntax error, unexpected '=', expecting ')'
+app/views/devise/registrations/new.html.erb:19: syntax error, unexpected '=', expecting ')'
+app/views/devise/registrations/new.html.erb:19: syntax error, unexpected '=', expecting ')'
+app/views/devise/registrations/new.html.erb:19: syntax error, unexpected '=', expecting ')'
+app/views/devise/registrations/new.html.erb:19: syntax error, unexpected '=', expecting ')'
+app/views/devise/registrations/new.html.erb:19: syntax error, unexpected '=', expecting ')'
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-10-10 18:51:19 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 467)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 26.4ms | Allocations: 3008)
+Completed 200 OK in 71ms (Views: 70.5ms | ActiveRecord: 0.0ms | Allocations: 11232)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-10-10 18:51:52 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 5.6ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 466)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 25.3ms | Allocations: 3022)
+Completed 200 OK in 62ms (Views: 61.4ms | ActiveRecord: 0.0ms | Allocations: 11231)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-10-10 18:51:56 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 20.2ms | Allocations: 1744)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.0ms | Allocations: 8097)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-10 19:43:16 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.0) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.0) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8119508980448988780)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateEvaluacions (20191010224143)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (205.1ms)[0m  [1m[35mCREATE TABLE "evaluacions" ("id" bigserial primary key, "nota" integer, "comentario" text, "user_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_a8356ff118"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8119508980448988780)[0m
+Started GET "/" for 127.0.0.1 at 2019-10-10 19:44:51 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.0) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.0) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-10-10 19:44:57 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.0) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.0) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8119508980448988780)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (52.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(8119508980448988780)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2019-10-10 19:47:26 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 575)
+Completed 200 OK in 1815ms (Views: 1787.9ms | ActiveRecord: 0.0ms | Allocations: 1267571)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-10-10 19:47:33 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 207)
+  Rendered devise/shared/_links.html.erb (Duration: 2.0ms | Allocations: 516)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 28.9ms | Allocations: 5808)
+Completed 200 OK in 114ms (Views: 60.7ms | ActiveRecord: 18.3ms | Allocations: 24173)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-10-10 19:47:36 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 203)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.2ms | Allocations: 1770)
+Completed 200 OK in 53ms (Views: 40.7ms | ActiveRecord: 0.0ms | Allocations: 10962)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-10-10 19:47:40 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"4A9bmWZm9bj0fKnDAKzTvijIJErbPqSrM1vT4j1bVx7ooHBc6eUbf9MWaITJxjnTgDdR9V76y13quZ3oKJ6r3A==", "user"=>{"email"=>"correo1@correo.cl", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "correo1@correo.cl"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 357ms (ActiveRecord: 1.3ms | Allocations: 5847)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-10 19:47:41 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 157)
+Completed 200 OK in 90ms (Views: 75.4ms | ActiveRecord: 0.6ms | Allocations: 8888)
+
+
+Started GET "/alumno" for 127.0.0.1 at 2019-10-10 19:47:51 -0300
+Processing by AlumnoController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/alumno_controller.rb:3:in `index'
+  Rendering alumno/index.html.erb within layouts/application
+  [1m[36mAsignatura Load (0.3ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."curso_id" = $1[0m  [["curso_id", 1]]
+  ↳ app/views/alumno/index.html.erb:13
+  Rendered alumno/index.html.erb within layouts/application (Duration: 21.1ms | Allocations: 4442)
+Completed 200 OK in 68ms (Views: 40.9ms | ActiveRecord: 15.0ms | Allocations: 15330)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-10 19:47:57 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:4:in `index'
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:6:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  Rendered profesors/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 480)
+Completed 200 OK in 56ms (Views: 27.9ms | ActiveRecord: 6.9ms | Allocations: 12019)
+
+
+Started GET "/curso" for 127.0.0.1 at 2019-10-10 19:50:21 -0300
+Processing by HomeController#curso as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:10:in `curso'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "asignaturas"."id" FROM "asignaturas" WHERE "asignaturas"."curso_id" = $1[0m  [["curso_id", 1]]
+  ↳ app/controllers/home_controller.rb:11:in `curso'
+  Rendering home/curso.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."asignatura_id" = $1[0m  [["asignatura_id", 1]]
+  ↳ app/views/home/curso.html.erb:8
+  Rendered home/curso.html.erb within layouts/application (Duration: 16.4ms | Allocations: 4918)
+Completed 200 OK in 112ms (Views: 48.8ms | ActiveRecord: 4.9ms | Allocations: 17599)
+
+
+Started GET "/alumno" for 127.0.0.1 at 2019-10-10 19:50:39 -0300
+Processing by AlumnoController#index as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/alumno_controller.rb:3:in `index'
+  Rendering alumno/index.html.erb within layouts/application
+  [1m[36mAsignatura Load (5.8ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."curso_id" = $1[0m  [["curso_id", 1]]
+  ↳ app/views/alumno/index.html.erb:13
+  Rendered alumno/index.html.erb within layouts/application (Duration: 16.8ms | Allocations: 811)
+Completed 200 OK in 60ms (Views: 36.6ms | ActiveRecord: 8.7ms | Allocations: 9545)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-10 19:51:08 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:4:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:6:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  Rendered profesors/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 120)
+Completed 200 OK in 46ms (Views: 24.6ms | ActiveRecord: 0.9ms | Allocations: 10025)
+
+
+Started GET "/evaluacion/index" for 127.0.0.1 at 2019-10-10 19:55:35 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/evaluacion/index"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/evaluacions/index" for 127.0.0.1 at 2019-10-10 19:55:40 -0300
+Processing by EvaluacionsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mEvaluacion Load (0.2ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions" WHERE "evaluacions"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:67:in `set_evaluacion'
+Completed 404 Not Found in 11ms (ActiveRecord: 4.5ms | Allocations: 1384)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Evaluacion with 'id'=index):
+  
+app/controllers/evaluacions_controller.rb:67:in `set_evaluacion'
+Started GET "/evaluacions/new" for 127.0.0.1 at 2019-10-10 19:56:05 -0300
+Processing by EvaluacionsController#new as HTML
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/_form.html.erb (Duration: 46.7ms | Allocations: 1678)
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 47.7ms | Allocations: 2027)
+Completed 200 OK in 90ms (Views: 73.1ms | ActiveRecord: 0.0ms | Allocations: 13845)
+
+
+Started GET "/evaluacions" for 127.0.0.1 at 2019-10-10 19:56:13 -0300
+Processing by EvaluacionsController#index as HTML
+  Rendering evaluacions/index.html.erb within layouts/application
+  [1m[36mEvaluacion Load (15.1ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions"[0m
+  ↳ app/views/evaluacions/index.html.erb:16
+  Rendered evaluacions/index.html.erb within layouts/application (Duration: 25.1ms | Allocations: 1080)
+Completed 200 OK in 54ms (Views: 37.3ms | ActiveRecord: 15.1ms | Allocations: 9057)
+
+
+Started GET "/evaluacions/new" for 127.0.0.1 at 2019-10-10 19:57:09 -0300
+Processing by EvaluacionsController#new as HTML
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/_form.html.erb (Duration: 4.1ms | Allocations: 903)
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 994)
+Completed 200 OK in 65ms (Views: 64.7ms | ActiveRecord: 0.0ms | Allocations: 8839)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-10 19:59:59 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:4:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:6:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  [1m[36mAsignatura Load (0.2ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mCACHE Asignatura Load (0.0ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mCACHE Asignatura Load (0.0ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mCACHE Asignatura Load (0.0ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  Rendered profesors/index.html.erb within layouts/application (Duration: 641.0ms | Allocations: 93266)
+Completed 500 Internal Server Error in 657ms (ActiveRecord: 1.0ms | Allocations: 96657)
+
+
+  
+ActionView::Template::Error (undefined method `evaluacions' for #<#<Class:0x00007fe5cde98d78>:0x00007fe5cde9f268>
+Did you mean?  evaluacions_url):
+    20: 	<p>Nombre: <%= @currentUserid.nombre %> <%= @currentUserid.apellido %></p>
+    21: 	<p>Correo: <%= @currentUserid.email %></p>
+    22: 	Nota promedio profesor: <%= @promedioevaluaciones %>
+    23: 	<p><%= link_to "Evaluar profesor", evaluacions()%></p>
+    24: 	<% end %>
+    25: 
+    26: <% end %>
+  
+app/views/profesors/index.html.erb:23
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-10 20:00:13 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:4:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:6:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  Rendered profesors/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 518)
+Completed 200 OK in 67ms (Views: 41.7ms | ActiveRecord: 0.6ms | Allocations: 11526)
+
+
+Started GET "/evaluacions" for 127.0.0.1 at 2019-10-10 20:00:16 -0300
+Processing by EvaluacionsController#index as HTML
+  Rendering evaluacions/index.html.erb within layouts/application
+  [1m[36mEvaluacion Load (10.1ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions"[0m
+  ↳ app/views/evaluacions/index.html.erb:16
+  Rendered evaluacions/index.html.erb within layouts/application (Duration: 14.2ms | Allocations: 1127)
+Completed 200 OK in 51ms (Views: 39.9ms | ActiveRecord: 10.1ms | Allocations: 9627)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-10 20:00:25 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:4:in `index'
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:6:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  [1m[36mAsignatura Load (0.3ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mCACHE Asignatura Load (0.0ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mCACHE Asignatura Load (0.0ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mCACHE Asignatura Load (0.0ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mCACHE Asignatura Load (0.0ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mCACHE Asignatura Load (0.0ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mCACHE Asignatura Load (0.0ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mCACHE Asignatura Load (0.0ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  Rendered profesors/index.html.erb within layouts/application (Duration: 1100.6ms | Allocations: 182954)
+Completed 500 Internal Server Error in 1138ms (ActiveRecord: 3.0ms | Allocations: 186411)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `evaluacions_new' for #<#<Class:0x00007fe5cddac900>:0x00007fe5cddb2eb8>
+Did you mean?  evaluacions_url
+               evaluacions_path
+               evaluacion_url):
+    20: 	<p>Nombre: <%= @currentUserid.nombre %> <%= @currentUserid.apellido %></p>
+    21: 	<p>Correo: <%= @currentUserid.email %></p>
+    22: 	Nota promedio profesor: <%= @promedioevaluaciones %>
+    23: 	<p><%= link_to "Evaluar profesor", evaluacions_new%></p>
+    24: 	<% end %>
+    25: 
+    26: <% end %>
+  
+app/views/profesors/index.html.erb:23
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-10 20:01:38 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:4:in `index'
+  [1m[35m (6.6ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:6:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  [1m[36mAsignatura Load (2.2ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mCACHE Asignatura Load (0.0ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mCACHE Asignatura Load (0.0ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mCACHE Asignatura Load (0.0ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mCACHE Asignatura Load (0.0ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mCACHE Asignatura Load (0.0ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mCACHE Asignatura Load (0.0ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mCACHE Asignatura Load (0.0ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  Rendered profesors/index.html.erb within layouts/application (Duration: 1177.2ms | Allocations: 182897)
+Completed 500 Internal Server Error in 1226ms (ActiveRecord: 9.5ms | Allocations: 186269)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_evaluacion' for #<#<Class:0x00007fe5ce1f8ba8>:0x00007fe5ce1ff188>
+Did you mean?  new_evaluacion_url):
+    20: 	<p>Nombre: <%= @currentUserid.nombre %> <%= @currentUserid.apellido %></p>
+    21: 	<p>Correo: <%= @currentUserid.email %></p>
+    22: 	Nota promedio profesor: <%= @promedioevaluaciones %>
+    23: 	<p><%= link_to "Evaluar profesor", new_evaluacion%></p>
+    24: 	<% end %>
+    25: 
+    26: <% end %>
+  
+app/views/profesors/index.html.erb:23
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-10 20:01:51 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:4:in `index'
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:6:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  Rendered profesors/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 518)
+Completed 200 OK in 75ms (Views: 38.7ms | ActiveRecord: 5.7ms | Allocations: 11522)
+
+
+Started GET "/evaluacions/new" for 127.0.0.1 at 2019-10-10 20:01:55 -0300
+Processing by EvaluacionsController#new as HTML
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/_form.html.erb (Duration: 2.0ms | Allocations: 1250)
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 14.0ms | Allocations: 1595)
+Completed 200 OK in 71ms (Views: 69.8ms | ActiveRecord: 0.0ms | Allocations: 10111)
+
+
+Started GET "/evaluacions" for 127.0.0.1 at 2019-10-10 20:04:31 -0300
+Processing by EvaluacionsController#index as HTML
+  Rendering evaluacions/index.html.erb within layouts/application
+  [1m[36mEvaluacion Load (1.5ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions"[0m
+  ↳ app/views/evaluacions/index.html.erb:16
+  Rendered evaluacions/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1127)
+Completed 200 OK in 47ms (Views: 44.4ms | ActiveRecord: 1.5ms | Allocations: 9088)
+
+
+Started GET "/evaluacions/new" for 127.0.0.1 at 2019-10-10 20:08:22 -0300
+Processing by EvaluacionsController#new as HTML
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/_form.html.erb (Duration: 74.1ms | Allocations: 903)
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 78.0ms | Allocations: 994)
+Completed 200 OK in 110ms (Views: 109.5ms | ActiveRecord: 0.0ms | Allocations: 8843)
+
+
+Started GET "/evaluacions/new" for 127.0.0.1 at 2019-10-10 20:12:49 -0300
+Processing by EvaluacionsController#new as HTML
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1154)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 2493)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>New Evaluacion</h1>
+
+<%= form_for(resource, as: resource_name, url: evaluacions_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+<div class="field">
+    <%= f.label :Notaa %><br />
+    <%= f.number_field :nota %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :Comentario %><br />
+    <%= f.text_field :comentario%>
+  </div>
+<div class="field">
+    <%= f.label :Notaa %><br />
+    <%= f.number_field :nota %>
+  </div>
+<%= link_to 'Back', evaluacions_path %>
+
+):
+1:    <h1>New Evaluacion</h1>
+2:    
+3:    <%= form_for(resource, as: resource_name, url: evaluacions_path(resource_name)) do |f| %>
+4:      <%= render "devise/shared/error_messages", resource: resource %>
+5:    
+6:    <div class="field">
+7:        <%= f.label :Notaa %><br />
+8:        <%= f.number_field :nota %>
+9:      </div>
+10:      
+11:      <div class="field">
+12:        <%= f.label :Comentario %><br />
+13:        <%= f.text_field :comentario%>
+14:      </div>
+15:    <div class="field">
+16:        <%= f.label :Notaa %><br />
+17:        <%= f.number_field :nota %>
+18:      </div>
+19:    <%= link_to 'Back', evaluacions_path %>
+  
+app/views/evaluacions/new.html.erb:22: syntax error, unexpected end-of-input, expecting end
+app/views/evaluacions/new.html.erb:22: syntax error, unexpected end-of-input, expecting end
+app/views/evaluacions/new.html.erb:22: syntax error, unexpected end-of-input, expecting end
+app/views/evaluacions/new.html.erb:22: syntax error, unexpected end-of-input, expecting end
+app/views/evaluacions/new.html.erb:22: syntax error, unexpected end-of-input, expecting end
+app/views/evaluacions/new.html.erb:22: syntax error, unexpected end-of-input, expecting end
+Started GET "/evaluacions/new" for 127.0.0.1 at 2019-10-10 20:13:29 -0300
+Processing by EvaluacionsController#new as HTML
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1151)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2490)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>New Evaluacion</h1>
+
+<%= form_for(resource, as: resource_name, url: evaluacions_new_url(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+<div class="field">
+    <%= f.label :Notaa %><br />
+    <%= f.number_field :nota %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :Comentario %><br />
+    <%= f.text_field :comentario%>
+  </div>
+<div class="field">
+    <%= f.label :Notaa %><br />
+    <%= f.number_field :nota %>
+  </div>
+<%= link_to 'Back', evaluacions_path %>
+
+):
+1:    <h1>New Evaluacion</h1>
+2:    
+3:    <%= form_for(resource, as: resource_name, url: evaluacions_new_url(resource_name)) do |f| %>
+4:      <%= render "devise/shared/error_messages", resource: resource %>
+5:    
+6:    <div class="field">
+7:        <%= f.label :Notaa %><br />
+8:        <%= f.number_field :nota %>
+9:      </div>
+10:      
+11:      <div class="field">
+12:        <%= f.label :Comentario %><br />
+13:        <%= f.text_field :comentario%>
+14:      </div>
+15:    <div class="field">
+16:        <%= f.label :Notaa %><br />
+17:        <%= f.number_field :nota %>
+18:      </div>
+19:    <%= link_to 'Back', evaluacions_path %>
+  
+app/views/evaluacions/new.html.erb:22: syntax error, unexpected end-of-input, expecting end
+app/views/evaluacions/new.html.erb:22: syntax error, unexpected end-of-input, expecting end
+app/views/evaluacions/new.html.erb:22: syntax error, unexpected end-of-input, expecting end
+app/views/evaluacions/new.html.erb:22: syntax error, unexpected end-of-input, expecting end
+app/views/evaluacions/new.html.erb:22: syntax error, unexpected end-of-input, expecting end
+app/views/evaluacions/new.html.erb:22: syntax error, unexpected end-of-input, expecting end
+Started GET "/evaluacions/new" for 127.0.0.1 at 2019-10-10 20:13:52 -0300
+Processing by EvaluacionsController#new as HTML
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1147)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2486)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>New Evaluacion</h1>
+
+<%= form_for(resource, as: resource_name, url: evaluacions_new_url()) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+<div class="field">
+    <%= f.label :Notaa %><br />
+    <%= f.number_field :nota %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :Comentario %><br />
+    <%= f.text_field :comentario%>
+  </div>
+<div class="field">
+    <%= f.label :Notaa %><br />
+    <%= f.number_field :nota %>
+  </div>
+<%= link_to 'Back', evaluacions_path %>
+
+):
+1:    <h1>New Evaluacion</h1>
+2:    
+3:    <%= form_for(resource, as: resource_name, url: evaluacions_new_url()) do |f| %>
+4:      <%= render "devise/shared/error_messages", resource: resource %>
+5:    
+6:    <div class="field">
+7:        <%= f.label :Notaa %><br />
+8:        <%= f.number_field :nota %>
+9:      </div>
+10:      
+11:      <div class="field">
+12:        <%= f.label :Comentario %><br />
+13:        <%= f.text_field :comentario%>
+14:      </div>
+15:    <div class="field">
+16:        <%= f.label :Notaa %><br />
+17:        <%= f.number_field :nota %>
+18:      </div>
+19:    <%= link_to 'Back', evaluacions_path %>
+  
+app/views/evaluacions/new.html.erb:22: syntax error, unexpected end-of-input, expecting end
+app/views/evaluacions/new.html.erb:22: syntax error, unexpected end-of-input, expecting end
+app/views/evaluacions/new.html.erb:22: syntax error, unexpected end-of-input, expecting end
+app/views/evaluacions/new.html.erb:22: syntax error, unexpected end-of-input, expecting end
+app/views/evaluacions/new.html.erb:22: syntax error, unexpected end-of-input, expecting end
+app/views/evaluacions/new.html.erb:22: syntax error, unexpected end-of-input, expecting end
+Started GET "/evaluacions/new" for 127.0.0.1 at 2019-10-10 20:14:17 -0300
+Processing by EvaluacionsController#new as HTML
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1147)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms | Allocations: 2486)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>New Evaluacion</h1>
+
+<%= form_for(resource, as: resource_name, url: new()) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+<div class="field">
+    <%= f.label :Notaa %><br />
+    <%= f.number_field :nota %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :Comentario %><br />
+    <%= f.text_field :comentario%>
+  </div>
+<div class="field">
+    <%= f.label :Notaa %><br />
+    <%= f.number_field :nota %>
+  </div>
+<%= link_to 'Back', evaluacions_path %>
+
+):
+1:    <h1>New Evaluacion</h1>
+2:    
+3:    <%= form_for(resource, as: resource_name, url: new()) do |f| %>
+4:      <%= render "devise/shared/error_messages", resource: resource %>
+5:    
+6:    <div class="field">
+7:        <%= f.label :Notaa %><br />
+8:        <%= f.number_field :nota %>
+9:      </div>
+10:      
+11:      <div class="field">
+12:        <%= f.label :Comentario %><br />
+13:        <%= f.text_field :comentario%>
+14:      </div>
+15:    <div class="field">
+16:        <%= f.label :Notaa %><br />
+17:        <%= f.number_field :nota %>
+18:      </div>
+19:    <%= link_to 'Back', evaluacions_path %>
+  
+app/views/evaluacions/new.html.erb:22: syntax error, unexpected end-of-input, expecting end
+app/views/evaluacions/new.html.erb:22: syntax error, unexpected end-of-input, expecting end
+app/views/evaluacions/new.html.erb:22: syntax error, unexpected end-of-input, expecting end
+app/views/evaluacions/new.html.erb:22: syntax error, unexpected end-of-input, expecting end
+app/views/evaluacions/new.html.erb:22: syntax error, unexpected end-of-input, expecting end
+app/views/evaluacions/new.html.erb:22: syntax error, unexpected end-of-input, expecting end
+Started GET "/evaluacions/new" for 127.0.0.1 at 2019-10-10 20:14:41 -0300
+Processing by EvaluacionsController#new as HTML
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/_form.html.erb (Duration: 2.0ms | Allocations: 1250)
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 19.7ms | Allocations: 1596)
+Completed 200 OK in 55ms (Views: 53.2ms | ActiveRecord: 0.0ms | Allocations: 10567)
+
+
+Started GET "/evaluacions/new" for 127.0.0.1 at 2019-10-10 20:18:28 -0300
+Processing by EvaluacionsController#new as HTML
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1054)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms | Allocations: 2383)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>New Evaluacion</h1>
+<%= form_for @user, :url => "evaluacions/new", :html => {:id => "number"} do |f| %>
+<%= render 'form', evaluacion: @evaluacion %>
+
+<%= link_to 'Back', evaluacions_path %>
+
+):
+1:    <h1>New Evaluacion</h1>
+2:    <%= form_for @user, :url => "evaluacions/new", :html => {:id => "number"} do |f| %>
+3:    <%= render 'form', evaluacion: @evaluacion %>
+4:    
+5:    <%= link_to 'Back', evaluacions_path %>
+  
+app/views/evaluacions/new.html.erb:8: syntax error, unexpected end-of-input, expecting end
+app/views/evaluacions/new.html.erb:8: syntax error, unexpected end-of-input, expecting end
+app/views/evaluacions/new.html.erb:8: syntax error, unexpected end-of-input, expecting end
+app/views/evaluacions/new.html.erb:8: syntax error, unexpected end-of-input, expecting end
+app/views/evaluacions/new.html.erb:8: syntax error, unexpected end-of-input, expecting end
+app/views/evaluacions/new.html.erb:8: syntax error, unexpected end-of-input, expecting end
+Started GET "/evaluacions/new" for 127.0.0.1 at 2019-10-10 20:18:47 -0300
+Processing by EvaluacionsController#new as HTML
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1035)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms | Allocations: 2369)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>New Evaluacion</h1>
+    2: <%= form_for @user, :url => "evaluacions/new", :html => {:id => "number"} do |f| %>
+    3: <%= render 'form', evaluacion: @evaluacion %>
+    4: 
+    5: <%= link_to 'Back', evaluacions_path %>
+  
+app/views/evaluacions/new.html.erb:2
+Started GET "/evaluacions/new" for 127.0.0.1 at 2019-10-10 20:19:31 -0300
+Processing by EvaluacionsController#new as HTML
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/_form.html.erb (Duration: 15.0ms | Allocations: 1250)
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 19.6ms | Allocations: 1749)
+Completed 200 OK in 57ms (Views: 56.1ms | ActiveRecord: 0.0ms | Allocations: 10710)
+
+
+Started GET "/evaluacions/new" for 127.0.0.1 at 2019-10-10 20:19:54 -0300
+Processing by EvaluacionsController#new as HTML
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/_form.html.erb (Duration: 15.1ms | Allocations: 1250)
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 18.9ms | Allocations: 1745)
+Completed 200 OK in 52ms (Views: 51.3ms | ActiveRecord: 0.0ms | Allocations: 10711)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 20:19:56 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/_form.html.erb (Duration: 1.4ms | Allocations: 906)
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1262)
+Completed 200 OK in 48ms (Views: 46.7ms | ActiveRecord: 0.0ms | Allocations: 9260)
+
+
+Started POST "/evaluacions/evaluacions/new.id" for 127.0.0.1 at 2019-10-10 20:34:22 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/evaluacions/evaluacions/new.id"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/evaluacions/evaluacions/new.id" for 127.0.0.1 at 2019-10-10 20:34:45 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/evaluacions/evaluacions/new.id"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/evaluacions/evaluacions/new.id" for 127.0.0.1 at 2019-10-10 20:36:19 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/evaluacions/evaluacions/new.id"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/evaluacions/evaluacions/new.id" for 127.0.0.1 at 2019-10-10 20:36:44 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/evaluacions/evaluacions/new.id"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 20:36:47 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/_form.html.erb (Duration: 3.3ms | Allocations: 1250)
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 20.1ms | Allocations: 1779)
+Completed 200 OK in 59ms (Views: 57.7ms | ActiveRecord: 0.0ms | Allocations: 10793)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 20:36:51 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/_form.html.erb (Duration: 5.3ms | Allocations: 906)
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1116)
+Completed 200 OK in 40ms (Views: 38.8ms | ActiveRecord: 0.0ms | Allocations: 8953)
+
+
+Started POST "/evaluacions/evaluacions" for 127.0.0.1 at 2019-10-10 20:37:00 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/evaluacions/evaluacions"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 20:37:18 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/_form.html.erb (Duration: 1.3ms | Allocations: 900)
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1109)
+Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 0.0ms | Allocations: 8964)
+
+
+Started POST "/evaluacions/evaluacions" for 127.0.0.1 at 2019-10-10 20:37:34 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/evaluacions/evaluacions"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 20:38:07 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/_form.html.erb (Duration: 15.8ms | Allocations: 1228)
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 19.2ms | Allocations: 1800)
+Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 0.0ms | Allocations: 10821)
+
+
+Started POST "/evaluacions" for 127.0.0.1 at 2019-10-10 20:38:15 -0300
+Processing by EvaluacionsController#create as HTML
+  Parameters: {"authenticity_token"=>"kjRfeXnDgIdQKMaFqOi83csGFTSH0ny2ZmThoJ1IxBfRowoBox66MNcojUwsaQvXAZyTHIw4BkGV5jmX2hQ5cA==", "evaluacion"=>{"nota"=>"5", "comentario"=>"prueba id", "user_id"=>""}, "commit"=>"Create Evaluacion"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/_form.html.erb (Duration: 1.7ms | Allocations: 1039)
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1414)
+Completed 200 OK in 110ms (Views: 37.2ms | ActiveRecord: 0.0ms | Allocations: 13762)
+
+
+Started GET "/evaluacions/new" for 127.0.0.1 at 2019-10-10 20:38:44 -0300
+Processing by EvaluacionsController#new as HTML
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/_form.html.erb (Duration: 17.1ms | Allocations: 878)
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 17.9ms | Allocations: 1126)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.0ms | Allocations: 8960)
+
+
+Started POST "/evaluacions" for 127.0.0.1 at 2019-10-10 20:38:53 -0300
+Processing by EvaluacionsController#create as HTML
+  Parameters: {"authenticity_token"=>"iKJlWyzlFZcO8STdk45o+azl2f4zNbxvT7Ay+7yJowzLNTAj9jgvIInxbxQXD9/zZn9f1jjfxpi8MurM+9Veaw==", "evaluacion"=>{"nota"=>"5", "comentario"=>"prueba ", "user_id"=>"1"}, "commit"=>"Create Evaluacion"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/evaluacions_controller.rb:30:in `block in create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:30:in `block in create'
+  [1m[36mEvaluacion Create (8.9ms)[0m  [1m[32mINSERT INTO "evaluacions" ("nota", "comentario", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["nota", 5], ["comentario", "prueba "], ["user_id", 1], ["created_at", "2019-10-10 23:38:53.397177"], ["updated_at", "2019-10-10 23:38:53.397177"]]
+  ↳ app/controllers/evaluacions_controller.rb:30:in `block in create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/evaluacions_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/evaluacions/2
+Completed 302 Found in 80ms (ActiveRecord: 10.9ms | Allocations: 6997)
+
+
+Started GET "/evaluacions/2" for 127.0.0.1 at 2019-10-10 20:38:53 -0300
+Processing by EvaluacionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEvaluacion Load (0.2ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions" WHERE "evaluacions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:67:in `set_evaluacion'
+  Rendering evaluacions/show.html.erb within layouts/application
+  Rendered evaluacions/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 293)
+Completed 200 OK in 53ms (Views: 50.6ms | ActiveRecord: 0.2ms | Allocations: 8879)
+
+
+Started GET "/evaluacions" for 127.0.0.1 at 2019-10-10 20:38:59 -0300
+Processing by EvaluacionsController#index as HTML
+  Rendering evaluacions/index.html.erb within layouts/application
+  [1m[36mEvaluacion Load (2.1ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions"[0m
+  ↳ app/views/evaluacions/index.html.erb:16
+  Rendered evaluacions/index.html.erb within layouts/application (Duration: 19.7ms | Allocations: 1184)
+Completed 200 OK in 57ms (Views: 53.6ms | ActiveRecord: 2.1ms | Allocations: 9162)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 20:39:39 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/_form.html.erb (Duration: 2.0ms | Allocations: 1228)
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 16.8ms | Allocations: 1800)
+Completed 200 OK in 48ms (Views: 46.9ms | ActiveRecord: 0.0ms | Allocations: 10817)
+
+
+Started POST "/evaluacions" for 127.0.0.1 at 2019-10-10 20:39:50 -0300
+Processing by EvaluacionsController#create as HTML
+  Parameters: {"authenticity_token"=>"V+3Ujpa6CnNZaSLzVPXBhxtTn1Ao/v+TmGBZkHcADkAUeoH2TGcwxN5paTrQdHaN0ckZeCMUhWRr4oGnMFzzJw==", "evaluacion"=>{"nota"=>"2", "comentario"=>"pruebaid", "user_id"=>""}, "commit"=>"Create Evaluacion"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/_form.html.erb (Duration: 9.9ms | Allocations: 1026)
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 12.6ms | Allocations: 1397)
+Completed 200 OK in 68ms (Views: 54.1ms | ActiveRecord: 0.0ms | Allocations: 10189)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 20:41:11 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/_form.html.erb (Duration: 18.6ms | Allocations: 1228)
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 20.1ms | Allocations: 1805)
+Completed 200 OK in 55ms (Views: 54.2ms | ActiveRecord: 0.0ms | Allocations: 10818)
+
+
+Started POST "/evaluacions" for 127.0.0.1 at 2019-10-10 20:41:19 -0300
+Processing by EvaluacionsController#create as HTML
+  Parameters: {"authenticity_token"=>"QgvZGXxZIJ+z9EXsBoulRv9moRy/xTzW7mb2d38keh8BnIxhpoQaKDT0DiWCChJMNfwnNLQvRiEd5C5AOHiHeA==", "evaluacion"=>{"nota"=>"2", "comentario"=>"prueba id", "user_id"=>""}, "commit"=>"Create Evaluacion"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/_form.html.erb (Duration: 6.3ms | Allocations: 1027)
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 7.9ms | Allocations: 1403)
+Completed 200 OK in 54ms (Views: 50.6ms | ActiveRecord: 0.0ms | Allocations: 10195)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 20:42:41 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/_form.html.erb (Duration: 10.7ms | Allocations: 1228)
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 13.9ms | Allocations: 1805)
+Completed 200 OK in 63ms (Views: 57.9ms | ActiveRecord: 0.0ms | Allocations: 10822)
+
+
+Started POST "/evaluacions" for 127.0.0.1 at 2019-10-10 20:42:48 -0300
+Processing by EvaluacionsController#create as HTML
+  Parameters: {"authenticity_token"=>"9rW4AKxjw/hYkgdTh+jZuiLWuf2ALkVM5afVm4K7eBK1Iu14dr75T9+STJoDaW6w6Ew/1YvEP7sWJQ2sxeeFdQ==", "evaluacion"=>{"nota"=>"2", "comentario"=>"prueba2", "user_id"=>""}, "commit"=>"Create Evaluacion"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/_form.html.erb (Duration: 4.3ms | Allocations: 1026)
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 12.1ms | Allocations: 1402)
+Completed 200 OK in 74ms (Views: 70.2ms | ActiveRecord: 0.0ms | Allocations: 10216)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-10 20:46:26 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 442)
+Completed 200 OK in 46ms (Views: 41.9ms | ActiveRecord: 0.3ms | Allocations: 9814)
+
+
+Started GET "/alumno" for 127.0.0.1 at 2019-10-10 20:46:29 -0300
+Processing by AlumnoController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/alumno_controller.rb:3:in `index'
+  Rendering alumno/index.html.erb within layouts/application
+  [1m[36mAsignatura Load (0.3ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."curso_id" = $1[0m  [["curso_id", 1]]
+  ↳ app/views/alumno/index.html.erb:13
+  Rendered alumno/index.html.erb within layouts/application (Duration: 15.4ms | Allocations: 1124)
+Completed 200 OK in 81ms (Views: 75.3ms | ActiveRecord: 0.6ms | Allocations: 10523)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-10 20:46:31 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:4:in `index'
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:6:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  Rendered profesors/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 518)
+Completed 200 OK in 58ms (Views: 34.1ms | ActiveRecord: 5.6ms | Allocations: 11108)
+
+
+Started GET "/evaluacions/new" for 127.0.0.1 at 2019-10-10 20:46:37 -0300
+Processing by EvaluacionsController#new as HTML
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/_form.html.erb (Duration: 14.6ms | Allocations: 881)
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 22.2ms | Allocations: 1141)
+Completed 200 OK in 65ms (Views: 64.6ms | ActiveRecord: 0.0ms | Allocations: 8985)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-10 20:47:55 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (7.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:4:in `index'
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:6:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  Rendered profesors/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 550)
+Completed 200 OK in 66ms (Views: 38.3ms | ActiveRecord: 10.3ms | Allocations: 11546)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-10 20:47:58 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:4:in `index'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:6:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  Rendered profesors/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 182)
+Completed 200 OK in 63ms (Views: 36.3ms | ActiveRecord: 1.3ms | Allocations: 10203)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 20:48:03 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/_form.html.erb (Duration: 14.9ms | Allocations: 1228)
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 16.3ms | Allocations: 1806)
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.0ms | Allocations: 10376)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 20:48:38 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/_form.html.erb (Duration: 11.5ms | Allocations: 1228)
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 20.4ms | Allocations: 1807)
+Completed 200 OK in 67ms (Views: 66.1ms | ActiveRecord: 0.0ms | Allocations: 10812)
+
+
+Started POST "/evaluacions" for 127.0.0.1 at 2019-10-10 20:48:46 -0300
+Processing by EvaluacionsController#create as HTML
+  Parameters: {"authenticity_token"=>"dGNW/HR+ag4ULrhq1cmLHOmH4z6h1RQMK5UaQIE2XY039AOErqNQuZMu86NRSDwWIx1lFqo/bvvYF8J3xmqg6g==", "evaluacion"=>{"nota"=>"2", "comentario"=>"prueba id", "user_id"=>""}, "commit"=>"Create Evaluacion"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/_form.html.erb (Duration: 7.2ms | Allocations: 1027)
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1404)
+Completed 200 OK in 54ms (Views: 49.3ms | ActiveRecord: 0.0ms | Allocations: 10183)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 20:54:26 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1006)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms | Allocations: 7056)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>New Evaluacion</h1>
+
+<%= render 'form', evaluacion: @evaluacion , user_id: @id%>
+
+<%= link_to 'Back', evaluacions_path %>
+<%end%>
+):
+1:    <h1>New Evaluacion</h1>
+2:    
+3:    <%= render 'form', evaluacion: @evaluacion , user_id: @id%>
+4:    
+5:    <%= link_to 'Back', evaluacions_path %>
+6:    <%end%>
+  
+app/views/evaluacions/new.html.erb:8: syntax error, unexpected end, expecting end-of-input
+app/views/evaluacions/new.html.erb:8: syntax error, unexpected end, expecting end-of-input
+app/views/evaluacions/new.html.erb:8: syntax error, unexpected end, expecting end-of-input
+app/views/evaluacions/new.html.erb:8: syntax error, unexpected end, expecting end-of-input
+app/views/evaluacions/new.html.erb:8: syntax error, unexpected end, expecting end-of-input
+app/views/evaluacions/new.html.erb:8: syntax error, unexpected end, expecting end-of-input
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 20:54:38 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/_form.html.erb (Duration: 2.3ms | Allocations: 1310)
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 12.2ms | Allocations: 1684)
+Completed 200 OK in 65ms (Views: 64.5ms | ActiveRecord: 0.0ms | Allocations: 10721)
+
+
+Started POST "/evaluacions" for 127.0.0.1 at 2019-10-10 20:55:02 -0300
+Processing by EvaluacionsController#create as HTML
+  Parameters: {"authenticity_token"=>"F9ue7WOnjCHUrX7bTwhXAhGRE4f59tNU+WXXBMUr5Q1UTMuVuXq2llOtNRLLieAI2wuVr/IcqaMK5w8zgncYag==", "evaluacion"=>{"nota"=>"4", "comentario"=>"prueba id", "user_id"=>""}, "commit"=>"Create Evaluacion"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/_form.html.erb (Duration: 1.8ms | Allocations: 1062)
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1268)
+Completed 200 OK in 60ms (Views: 54.4ms | ActiveRecord: 0.0ms | Allocations: 10555)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 20:59:28 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/_form.html.erb (Duration: 2.1ms | Allocations: 1250)
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 853.6ms | Allocations: 163565)
+Completed 500 Internal Server Error in 859ms (ActiveRecord: 0.0ms | Allocations: 164959)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00007fe5ce1b3260>:0x00007fe5ce1b11e0>):
+    1: <h1>New Evaluacion</h1>
+    2: 
+    3: <%= render 'form', evaluacion: @evaluacion %>
+    4: <%= f.number_field :user_id, value: @id%>
+    5: <%= link_to 'Back', evaluacions_path %>
+  
+app/views/evaluacions/new.html.erb:4
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 21:22:02 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 489.1ms | Allocations: 81343)
+Completed 500 Internal Server Error in 503ms (ActiveRecord: 0.0ms | Allocations: 82743)
+
+
+  
+ActionView::Template::Error (undefined method `laber' for #<ActionView::Helpers::FormBuilder:0x00007fe5ce0de178>
+Did you mean?  label):
+     6:   <%= f.label :Nota %>
+     7:   <%= f.number_field :nota %>
+     8: 
+     9:   <%= f.laber :Comentario %>
+    10:   <%= f.text_field :comentario %>
+    11: 
+    12:   
+  
+app/views/evaluacions/new.html.erb:9
+app/views/evaluacions/new.html.erb:5
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 21:22:08 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 483.9ms | Allocations: 81051)
+Completed 500 Internal Server Error in 485ms (ActiveRecord: 0.0ms | Allocations: 81563)
+
+
+  
+ActionView::Template::Error (undefined method `laber' for #<ActionView::Helpers::FormBuilder:0x00007fe5cd0a1d78>
+Did you mean?  label):
+     6:   <%= f.label :Nota %>
+     7:   <%= f.number_field :nota %>
+     8: 
+     9:   <%= f.laber :Comentario %>
+    10:   <%= f.text_field :comentario %>
+    11: 
+    12:   
+  
+app/views/evaluacions/new.html.erb:9
+app/views/evaluacions/new.html.erb:5
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 21:25:06 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 30.3ms | Allocations: 2609)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.0ms | Allocations: 4007)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "Send message":String):
+    12:   
+    13:   <%= f.number_field :user_id , :value => @id %>
+    14: 
+    15:   <%= f.button :submit, 'Send message' %>
+    16: 
+    17: <%= link_to 'Back', evaluacions_path %>
+    18: <% end %>
+  
+app/views/evaluacions/new.html.erb:15
+app/views/evaluacions/new.html.erb:5
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 21:26:34 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 913)
+Completed 200 OK in 60ms (Views: 59.2ms | ActiveRecord: 0.0ms | Allocations: 9943)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 21:26:47 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 665)
+Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.0ms | Allocations: 8527)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 21:27:12 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 11.8ms | Allocations: 1107)
+Completed 200 OK in 49ms (Views: 47.5ms | ActiveRecord: 0.0ms | Allocations: 10119)
+
+
+Started POST "/evaluacions" for 127.0.0.1 at 2019-10-10 21:27:20 -0300
+Processing by EvaluacionsController#create as HTML
+  Parameters: {"authenticity_token"=>"11Xrz3+ItUmd1HHhJX6zQu5Y7TQbmIOUuQoH+6fQzUGUwr63pVWP/hrUOiih/wRIJMJrHBBy+WNKiN/M4IwwJg==", "evaluacion"=>{"nota"=>"3", "comentario"=>"prueba", "user_id"=>""}, "commit"=>"Sign up"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 824)
+Completed 200 OK in 50ms (Views: 42.6ms | ActiveRecord: 0.0ms | Allocations: 9600)
+
+
+Started GET "/evaluacions" for 127.0.0.1 at 2019-10-10 21:27:26 -0300
+Processing by EvaluacionsController#index as HTML
+  Rendering evaluacions/index.html.erb within layouts/application
+  [1m[36mEvaluacion Load (3.7ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions"[0m
+  ↳ app/views/evaluacions/index.html.erb:16
+  Rendered evaluacions/index.html.erb within layouts/application (Duration: 11.3ms | Allocations: 1275)
+Completed 200 OK in 56ms (Views: 50.5ms | ActiveRecord: 3.7ms | Allocations: 9279)
+
+
+Started GET "/evaluacions" for 127.0.0.1 at 2019-10-10 21:27:30 -0300
+Processing by EvaluacionsController#index as HTML
+  Rendering evaluacions/index.html.erb within layouts/application
+  [1m[36mEvaluacion Load (0.9ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions"[0m
+  ↳ app/views/evaluacions/index.html.erb:16
+  Rendered evaluacions/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 910)
+Completed 200 OK in 37ms (Views: 34.7ms | ActiveRecord: 0.9ms | Allocations: 8746)
+
+
+Started GET "/evaluacions" for 127.0.0.1 at 2019-10-10 21:27:54 -0300
+Processing by EvaluacionsController#index as HTML
+  Rendering evaluacions/index.html.erb within layouts/application
+  [1m[36mEvaluacion Load (1.2ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions"[0m
+  ↳ app/views/evaluacions/index.html.erb:16
+  Rendered evaluacions/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 910)
+Completed 200 OK in 74ms (Views: 72.2ms | ActiveRecord: 1.2ms | Allocations: 8735)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 21:28:06 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 810)
+Completed 200 OK in 39ms (Views: 38.3ms | ActiveRecord: 0.0ms | Allocations: 8673)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 21:28:25 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 15.6ms | Allocations: 1111)
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.0ms | Allocations: 10145)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 21:28:39 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1076)
+Completed 200 OK in 50ms (Views: 49.4ms | ActiveRecord: 0.0ms | Allocations: 10068)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 21:30:31 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1132)
+Completed 200 OK in 94ms (Views: 48.7ms | ActiveRecord: 20.4ms | Allocations: 15049)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 21:31:01 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1090)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.0ms | Allocations: 10108)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 21:31:12 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1093)
+Completed 200 OK in 50ms (Views: 48.2ms | ActiveRecord: 0.0ms | Allocations: 10146)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 21:38:09 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 816)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.0ms | Allocations: 8684)
+
+
+Started GET "/evaluacions/new/1" for 127.0.0.1 at 2019-10-10 21:42:17 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/evaluacions/new/1"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 21:42:27 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 809)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.0ms | Allocations: 8680)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 21:44:48 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 874)
+Completed 200 OK in 95ms (Views: 56.0ms | ActiveRecord: 18.9ms | Allocations: 13774)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 21:44:59 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 874)
+Completed 200 OK in 120ms (Views: 70.2ms | ActiveRecord: 14.0ms | Allocations: 13936)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 21:45:21 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1098)
+Completed 200 OK in 65ms (Views: 63.7ms | ActiveRecord: 0.0ms | Allocations: 10132)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 22:02:19 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 879)
+Completed 200 OK in 107ms (Views: 65.1ms | ActiveRecord: 20.8ms | Allocations: 13931)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 22:02:33 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1098)
+Completed 200 OK in 64ms (Views: 62.8ms | ActiveRecord: 0.0ms | Allocations: 10124)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 22:02:46 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1091)
+Completed 200 OK in 51ms (Views: 50.3ms | ActiveRecord: 0.0ms | Allocations: 10101)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 22:03:35 -0300
+Processing by EvaluacionsController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 2238.2ms | Allocations: 161570)
+Completed 500 Internal Server Error in 2308ms (ActiveRecord: 28.3ms | Allocations: 167113)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `evaluacions_path' for #<#<Class:0x00007fe5ce1e1cf0>:0x00007fe5ce1e7920>
+Did you mean?  @evaluacion):
+    1: <h1>New Evaluacion</h1>
+    2: <%= @id %>
+    3: 
+    4: <%= link_to 'Back', evaluacions_path %>
+    5: <%= form_for @evaluacion do |f| %>
+    6:   <%= f.label :Nota %>
+    7:   <%= f.number_field :nota %>
+  
+app/views/evaluacions/new.html.erb:4
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 22:04:13 -0300
+Processing by EvaluacionsController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 509.3ms | Allocations: 82567)
+Completed 500 Internal Server Error in 518ms (ActiveRecord: 0.0ms | Allocations: 83908)
+
+
+  
+ActionView::Template::Error (undefined method `evaluacions_path' for #<#<Class:0x00007fe5cdeb9e88>:0x00007fe5cdeb8420>):
+    1: <h1>New Evaluacion</h1>
+    2: <%= @id %>
+    3: 
+    4: <%= form_for @evaluacion do |f| %>
+    5:   <%= f.label :Nota %>
+    6:   <%= f.number_field :nota %>
+    7: 
+  
+app/views/evaluacions/new.html.erb:4
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 22:18:00 -0300
+Processing by EvaluacionsController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 99)
+Completed 200 OK in 51ms (Views: 49.1ms | ActiveRecord: 0.0ms | Allocations: 9066)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 23:12:27 -0300
+Processing by EvaluacionsController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 671.8ms | Allocations: 82525)
+Completed 500 Internal Server Error in 678ms (ActiveRecord: 0.0ms | Allocations: 83868)
+
+
+  
+ActionView::Template::Error (undefined method `evaluacions_path' for #<#<Class:0x00007fe5ce3207b0>:0x00007fe5ce326c50>):
+    1: <h1>New Evaluacion</h1>
+    2: <%= @id %>
+    3: 
+    4: <%= form_for @evaluacion do |f| %>
+    5:   <%= f.label :Nota %>
+    6:   <%= f.number_field :nota %>
+    7: 
+  
+app/views/evaluacions/new.html.erb:4
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 23:13:03 -0300
+Processing by EvaluacionsController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 1422.3ms | Allocations: 82528)
+Completed 500 Internal Server Error in 1450ms (ActiveRecord: 0.0ms | Allocations: 83877)
+
+
+  
+ActionView::Template::Error (undefined method `evaluacions_path' for #<#<Class:0x00007fe5ce11b1b8>:0x00007fe5ce119700>):
+    1: <h1>New Evaluacion</h1>
+    2: <%= @id %>
+    3: 
+    4: <%= form_for [@evaluacion] do |f| %>
+    5:   <%= f.label :Nota %>
+    6:   <%= f.number_field :nota %>
+    7: 
+  
+app/views/evaluacions/new.html.erb:4
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 23:16:00 -0300
+Processing by EvaluacionsController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 603.6ms | Allocations: 82522)
+Completed 500 Internal Server Error in 611ms (ActiveRecord: 0.0ms | Allocations: 83871)
+
+
+  
+ActionView::Template::Error (undefined method `evaluacions_path' for #<#<Class:0x00007fe5cde80b60>:0x00007fe5cde8e198>):
+    1: <h1>New Evaluacion</h1>
+    2: <%= @id %>
+    3: 
+    4: <%= form_for (@evaluacion) do |f| %>
+    5:   <%= f.label :Nota %>
+    6:   <%= f.number_field :nota %>
+    7: 
+  
+app/views/evaluacions/new.html.erb:4
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 23:16:07 -0300
+Processing by EvaluacionsController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 601.6ms | Allocations: 82276)
+Completed 500 Internal Server Error in 605ms (ActiveRecord: 0.0ms | Allocations: 82778)
+
+
+  
+ActionView::Template::Error (undefined method `evaluacions_path' for #<#<Class:0x00007fe5cde80b60>:0x00007fe5ce223650>):
+    1: <h1>New Evaluacion</h1>
+    2: <%= @id %>
+    3: 
+    4: <%= form_for (@evaluacion) do |f| %>
+    5:   <%= f.label :Nota %>
+    6:   <%= f.number_field :nota %>
+    7: 
+  
+app/views/evaluacions/new.html.erb:4
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 23:17:42 -0300
+  
+SyntaxError (/home/kingbayron/Desktop/ruby/tarea2/app/controllers/evaluacions_controller.rb:16: syntax error, unexpected tSYMBEG
+  def new.:id
+          ^
+/home/kingbayron/Desktop/ruby/tarea2/app/controllers/evaluacions_controller.rb:77: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/evaluacions_controller.rb:16: syntax error, unexpected tSYMBEG
+app/controllers/evaluacions_controller.rb:77: syntax error, unexpected end, expecting end-of-input
+app/controllers/evaluacions_controller.rb:16: syntax error, unexpected tSYMBEG
+app/controllers/evaluacions_controller.rb:77: syntax error, unexpected end, expecting end-of-input
+app/controllers/evaluacions_controller.rb:16: syntax error, unexpected tSYMBEG
+app/controllers/evaluacions_controller.rb:77: syntax error, unexpected end, expecting end-of-input
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 23:17:58 -0300
+Processing by EvaluacionsController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 874)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 2232)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>New Evaluacion</h1>
+    2: <%= @id %>
+    3: 
+    4: <%= form_for (@evaluacion) do |f| %>
+    5:   <%= f.label :Nota %>
+    6:   <%= f.number_field :nota %>
+    7: 
+  
+app/views/evaluacions/new.html.erb:4
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 23:18:17 -0300
+Processing by EvaluacionsController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1114)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms | Allocations: 2401)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>New Evaluacion</h1>
+    2: <%= @id %>
+    3: 
+    4: <%= form_for @evaluacion do |f| %>
+    5:   <%= f.label :Nota %>
+    6:   <%= f.number_field :nota %>
+    7: 
+  
+app/views/evaluacions/new.html.erb:4
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 23:18:39 -0300
+Processing by EvaluacionsController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 927.7ms | Allocations: 161611)
+Completed 500 Internal Server Error in 941ms (ActiveRecord: 0.0ms | Allocations: 162901)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `evaluacions_path' for #<#<Class:0x00007fe5ce24c6b8>:0x00007fe5ce251e38>):
+    1: <h1>New Evaluacion</h1>
+    2: <%= @id %>
+    3: 
+    4: <%= link_to 'Back', evaluacions_path %>
+    5: <%= form_for @evaluacion do |f| %>
+    6:   <%= f.label :Nota %>
+    7:   <%= f.number_field :nota %>
+  
+app/views/evaluacions/new.html.erb:4
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 23:18:52 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 883)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms | Allocations: 2239)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    2: <%= @id %>
+    3: 
+    4: <%= link_to 'Back', evaluacions_path %>
+    5: <%= form_for @evaluacion do |f| %>
+    6:   <%= f.label :Nota %>
+    7:   <%= f.number_field :nota %>
+    8: 
+  
+app/views/evaluacions/new.html.erb:5
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 23:20:23 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1180)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms | Allocations: 2354)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    2: 
+    3: 
+    4: <%= link_to 'Back', evaluacions_path %>
+    5: <%= form_for @evaluacion do |f| %>
+    6:   <%= f.label :Nota %>
+    7:   <%= f.number_field :nota %>
+    8: 
+  
+app/views/evaluacions/new.html.erb:5
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 23:21:15 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1559)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms | Allocations: 2734)
+
+
+  
+ActionView::Template::Error (undefined method `new' for nil:NilClass):
+    2: 
+    3: 
+    4: <%= link_to 'Back', evaluacions_path %>
+    5: <%= form_for @evaluacion.new do |f| %>
+    6:   <%= f.label :Nota %>
+    7:   <%= f.number_field :nota %>
+    8: 
+  
+app/views/evaluacions/new.html.erb:5
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 23:21:26 -0300
+Processing by EvaluacionsController#new as 
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1559)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms | Allocations: 2733)
+
+
+  
+ActionView::Template::Error (undefined method `new' for nil:NilClass):
+    2: 
+    3: 
+    4: <%= link_to 'Back', evaluacions_path %>
+    5: <%= form_for @evaluacion.new.id do |f| %>
+    6:   <%= f.label :Nota %>
+    7:   <%= f.number_field :nota %>
+    8: 
+  
+app/views/evaluacions/new.html.erb:5
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 23:23:10 -0300
+Processing by EvaluacionsController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 17.8ms | Allocations: 2357)
+Completed 500 Internal Server Error in 71ms (ActiveRecord: 9.2ms | Allocations: 8060)
+
+
+  
+ActionView::Template::Error (undefined method `new' for #<Evaluacion:0x00007fe5ce293c98>):
+    2: 
+    3: 
+    4: <%= link_to 'Back', evaluacions_path %>
+    5: <%= form_for @evaluacion.new.id do |f| %>
+    6:   <%= f.label :Nota %>
+    7:   <%= f.number_field :nota %>
+    8: 
+  
+app/views/evaluacions/new.html.erb:5
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 23:23:20 -0300
+Processing by EvaluacionsController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1132)
+Completed 200 OK in 74ms (Views: 72.9ms | ActiveRecord: 0.0ms | Allocations: 10106)
+
+
+Started POST "/evaluacions" for 127.0.0.1 at 2019-10-10 23:23:44 -0300
+Processing by EvaluacionsController#create as HTML
+  Parameters: {"authenticity_token"=>"fMv3OjP41OfZBsub6CUzQqaTQ5jlhJMTn17MZE+L9ig/XKJC6SXuUF4GgFJspIRIbAnFsO5u6eRs3BRTCNcLTw==", "evaluacion"=>{"nota"=>"4", "comentario"=>"prueba id 3", "user_id"=>"1"}, "commit"=>"Sign up"}
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/evaluacions_controller.rb:33:in `block in create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:33:in `block in create'
+  [1m[36mEvaluacion Create (0.8ms)[0m  [1m[32mINSERT INTO "evaluacions" ("nota", "comentario", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["nota", 4], ["comentario", "prueba id 3"], ["user_id", 1], ["created_at", "2019-10-11 02:23:44.700149"], ["updated_at", "2019-10-11 02:23:44.700149"]]
+  ↳ app/controllers/evaluacions_controller.rb:33:in `block in create'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/evaluacions_controller.rb:33:in `block in create'
+Redirected to http://localhost:3000/evaluacions/3
+Completed 302 Found in 130ms (ActiveRecord: 18.8ms | Allocations: 12988)
+
+
+Started GET "/evaluacions/3" for 127.0.0.1 at 2019-10-10 23:23:44 -0300
+Processing by EvaluacionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mEvaluacion Load (0.3ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions" WHERE "evaluacions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:70:in `set_evaluacion'
+  Rendering evaluacions/show.html.erb within layouts/application
+  Rendered evaluacions/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 300)
+Completed 200 OK in 45ms (Views: 39.3ms | ActiveRecord: 0.3ms | Allocations: 8977)
+
+
+Started POST "/evaluacions" for 127.0.0.1 at 2019-10-10 23:23:59 -0300
+Processing by EvaluacionsController#create as HTML
+  Parameters: {"authenticity_token"=>"fMv3OjP41OfZBsub6CUzQqaTQ5jlhJMTn17MZE+L9ig/XKJC6SXuUF4GgFJspIRIbAnFsO5u6eRs3BRTCNcLTw==", "evaluacion"=>{"nota"=>"4", "comentario"=>"prueba id 3", "user_id"=>"4"}, "commit"=>"Sign up"}
+  [1m[35m (10.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/evaluacions_controller.rb:33:in `block in create'
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:33:in `block in create'
+  [1m[36mEvaluacion Create (1.7ms)[0m  [1m[32mINSERT INTO "evaluacions" ("nota", "comentario", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["nota", 4], ["comentario", "prueba id 3"], ["user_id", 4], ["created_at", "2019-10-11 02:23:59.452142"], ["updated_at", "2019-10-11 02:23:59.452142"]]
+  ↳ app/controllers/evaluacions_controller.rb:33:in `block in create'
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/evaluacions_controller.rb:33:in `block in create'
+Redirected to http://localhost:3000/evaluacions/4
+Completed 302 Found in 51ms (ActiveRecord: 21.1ms | Allocations: 3860)
+
+
+Started GET "/evaluacions/4" for 127.0.0.1 at 2019-10-10 23:23:59 -0300
+Processing by EvaluacionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mEvaluacion Load (0.2ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions" WHERE "evaluacions"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:70:in `set_evaluacion'
+  Rendering evaluacions/show.html.erb within layouts/application
+  Rendered evaluacions/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 97)
+Completed 200 OK in 41ms (Views: 39.2ms | ActiveRecord: 0.2ms | Allocations: 8496)
+
+
+Started GET "/evaluacions" for 127.0.0.1 at 2019-10-10 23:24:05 -0300
+Processing by EvaluacionsController#index as HTML
+  Rendering evaluacions/index.html.erb within layouts/application
+  [1m[36mEvaluacion Load (0.7ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions"[0m
+  ↳ app/views/evaluacions/index.html.erb:16
+  Rendered evaluacions/index.html.erb within layouts/application (Duration: 19.6ms | Allocations: 1438)
+Completed 200 OK in 79ms (Views: 77.0ms | ActiveRecord: 0.7ms | Allocations: 9415)
+
+
+Started GET "/evaluacions" for 127.0.0.1 at 2019-10-10 23:24:39 -0300
+Processing by EvaluacionsController#index as HTML
+  Rendering evaluacions/index.html.erb within layouts/application
+  [1m[36mEvaluacion Load (0.3ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions"[0m
+  ↳ app/views/evaluacions/index.html.erb:16
+  Rendered evaluacions/index.html.erb within layouts/application (Duration: 23.2ms | Allocations: 1425)
+Completed 200 OK in 68ms (Views: 67.1ms | ActiveRecord: 0.3ms | Allocations: 10387)
+
+
+Started GET "/evaluacions/4" for 127.0.0.1 at 2019-10-10 23:24:43 -0300
+Processing by EvaluacionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mEvaluacion Load (0.8ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions" WHERE "evaluacions"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:70:in `set_evaluacion'
+  Rendering evaluacions/show.html.erb within layouts/application
+  Rendered evaluacions/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 284)
+Completed 200 OK in 41ms (Views: 37.1ms | ActiveRecord: 0.8ms | Allocations: 8799)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 23:24:54 -0300
+Processing by EvaluacionsController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 858)
+Completed 200 OK in 42ms (Views: 41.5ms | ActiveRecord: 0.0ms | Allocations: 8878)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 23:25:43 -0300
+Processing by EvaluacionsController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 584.9ms | Allocations: 81205)
+Completed 500 Internal Server Error in 607ms (ActiveRecord: 0.0ms | Allocations: 82536)
+
+
+  
+ActionView::Template::Error (undefined method `laber' for #<ActionView::Helpers::FormBuilder:0x00007fe5ce1bf948>
+Did you mean?  label):
+     6:   <%= f.label :Nota %>
+     7:   <%= f.number_field :nota %>
+     8: 
+     9:   <%= f.laber :Comentario %>
+    10:   <%= f.text_field :comentario %>
+    11: 
+    12:   
+  
+app/views/evaluacions/new.html.erb:9
+app/views/evaluacions/new.html.erb:5
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 23:25:53 -0300
+Processing by EvaluacionsController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 48.8ms | Allocations: 2579)
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 0.0ms | Allocations: 3914)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "Send message":String):
+    12:   
+    13:   <%= f.number_field :user_id , :value => @id %>
+    14: 
+    15:   <%= f.button :submit, 'Send message' %>
+    16: 
+    17: <%= link_to 'Back', evaluacions_path %>
+    18: <% end %>
+  
+app/views/evaluacions/new.html.erb:15
+app/views/evaluacions/new.html.erb:5
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 23:26:23 -0300
+Processing by EvaluacionsController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 10.0ms | Allocations: 914)
+Completed 200 OK in 57ms (Views: 55.1ms | ActiveRecord: 0.0ms | Allocations: 9880)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 23:31:15 -0300
+Processing by EvaluacionsController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 928.2ms | Allocations: 162408)
+Completed 500 Internal Server Error in 947ms (ActiveRecord: 0.0ms | Allocations: 163751)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `none' for #<#<Class:0x00007fe5ce173570>:0x00007fe5ce1716f8>):
+    10:   <%= f.text_field :comentario %>
+    11: 
+    12:   
+    13:   <%= f.number_field :user_id , :value => @id, display:none %>
+    14: 
+    15:   <div class="actions">
+    16:     <%= f.submit "Sign up" %>
+  
+app/views/evaluacions/new.html.erb:13
+app/views/evaluacions/new.html.erb:5
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-10 23:32:52 -0300
+Processing by EvaluacionsController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 929)
+Completed 200 OK in 133ms (Views: 131.8ms | ActiveRecord: 0.0ms | Allocations: 9906)
+
+
+Started POST "/evaluacions" for 127.0.0.1 at 2019-10-10 23:33:06 -0300
+Processing by EvaluacionsController#create as HTML
+  Parameters: {"authenticity_token"=>"x0yg3gjNBrDfnPQbVs88X5xRTHMuRWdfUHswTvu21UGE2/Wm0hA8B1icv9LSTotVVsvKWyWvHaij+eh5vOooJg==", "evaluacion"=>{"nota"=>"4", "comentario"=>"prueba 4", "user_id"=>"1"}, "commit"=>"Sign up"}
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/evaluacions_controller.rb:33:in `block in create'
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:33:in `block in create'
+  [1m[36mEvaluacion Create (1.8ms)[0m  [1m[32mINSERT INTO "evaluacions" ("nota", "comentario", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["nota", 4], ["comentario", "prueba 4"], ["user_id", 1], ["created_at", "2019-10-11 02:33:06.881912"], ["updated_at", "2019-10-11 02:33:06.881912"]]
+  ↳ app/controllers/evaluacions_controller.rb:33:in `block in create'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/evaluacions_controller.rb:33:in `block in create'
+Redirected to http://localhost:3000/evaluacions/5
+Completed 302 Found in 51ms (ActiveRecord: 6.3ms | Allocations: 3980)
+
+
+Started GET "/evaluacions/5" for 127.0.0.1 at 2019-10-10 23:33:06 -0300
+Processing by EvaluacionsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mEvaluacion Load (0.5ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions" WHERE "evaluacions"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:70:in `set_evaluacion'
+  Rendering evaluacions/show.html.erb within layouts/application
+  Rendered evaluacions/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 286)
+Completed 200 OK in 48ms (Views: 33.3ms | ActiveRecord: 0.5ms | Allocations: 8852)
+
+
+Started GET "/evaluacions" for 127.0.0.1 at 2019-10-10 23:33:13 -0300
+Processing by EvaluacionsController#index as HTML
+  Rendering evaluacions/index.html.erb within layouts/application
+  [1m[36mEvaluacion Load (8.6ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions"[0m
+  ↳ app/views/evaluacions/index.html.erb:16
+  Rendered evaluacions/index.html.erb within layouts/application (Duration: 26.4ms | Allocations: 1549)
+Completed 200 OK in 87ms (Views: 76.9ms | ActiveRecord: 8.6ms | Allocations: 9520)
+
+
+Started DELETE "/evaluacions/4" for 127.0.0.1 at 2019-10-10 23:33:20 -0300
+Processing by EvaluacionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DkKE2OC2y6in5e3z4KND3vI2QIgDrdVMCtDrRZEnq3tN1dGgOmvxHyDlpjpkIvTUOKzGoAhHr7v5UjNy1ntWHA==", "id"=>"4"}
+  [1m[36mEvaluacion Load (4.8ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions" WHERE "evaluacions"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:70:in `set_evaluacion'
+  [1m[35m (6.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/evaluacions_controller.rb:60:in `destroy'
+  [1m[36mEvaluacion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "evaluacions" WHERE "evaluacions"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/evaluacions_controller.rb:60:in `destroy'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/evaluacions_controller.rb:60:in `destroy'
+Redirected to http://localhost:3000/evaluacions
+Completed 302 Found in 24ms (ActiveRecord: 12.4ms | Allocations: 2716)
+
+
+Started GET "/evaluacions" for 127.0.0.1 at 2019-10-10 23:33:20 -0300
+Processing by EvaluacionsController#index as HTML
+  Rendering evaluacions/index.html.erb within layouts/application
+  [1m[36mEvaluacion Load (2.6ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions"[0m
+  ↳ app/views/evaluacions/index.html.erb:16
+  Rendered evaluacions/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1159)
+Completed 200 OK in 31ms (Views: 27.1ms | ActiveRecord: 2.6ms | Allocations: 9014)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-10 23:33:32 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 456)
+Completed 200 OK in 34ms (Views: 23.0ms | ActiveRecord: 0.4ms | Allocations: 9879)
+
+
+Started GET "/alumno" for 127.0.0.1 at 2019-10-10 23:33:34 -0300
+Processing by AlumnoController#index as HTML
+  [1m[36mUser Load (8.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/alumno_controller.rb:3:in `index'
+  Rendering alumno/index.html.erb within layouts/application
+  [1m[36mAsignatura Load (0.4ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."curso_id" = $1[0m  [["curso_id", 1]]
+  ↳ app/views/alumno/index.html.erb:13
+  Rendered alumno/index.html.erb within layouts/application (Duration: 28.4ms | Allocations: 4400)
+Completed 200 OK in 112ms (Views: 73.9ms | ActiveRecord: 23.7ms | Allocations: 14907)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-10 23:33:37 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (9.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:4:in `index'
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:6:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  Rendered profesors/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 546)
+Completed 200 OK in 134ms (Views: 102.3ms | ActiveRecord: 13.2ms | Allocations: 11183)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-10 23:39:56 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 447)
+Completed 200 OK in 51ms (Views: 35.1ms | ActiveRecord: 7.5ms | Allocations: 10383)
+
+
+Started GET "/alumno" for 127.0.0.1 at 2019-10-10 23:40:39 -0300
+Processing by AlumnoController#index as HTML
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/alumno_controller.rb:3:in `index'
+  Rendering alumno/index.html.erb within layouts/application
+  [1m[36mAsignatura Load (0.8ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."curso_id" = $1[0m  [["curso_id", 1]]
+  ↳ app/views/alumno/index.html.erb:13
+  Rendered alumno/index.html.erb within layouts/application (Duration: 12.4ms | Allocations: 1124)
+Completed 200 OK in 87ms (Views: 62.5ms | ActiveRecord: 5.0ms | Allocations: 10523)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-10 23:40:42 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:4:in `index'
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:6:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  Rendered profesors/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 545)
+Completed 200 OK in 73ms (Views: 42.4ms | ActiveRecord: 3.2ms | Allocations: 11117)
+
+

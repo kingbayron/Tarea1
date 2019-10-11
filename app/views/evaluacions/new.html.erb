@@ -1,0 +1,20 @@
+<h1>New Evaluacion</h1>
+
+
+<%= link_to 'Back', evaluacions_path %>
+<%= form_for @evaluacion do |f| %>
+  <%= f.label :Nota %>
+  <%= f.number_field :nota %>
+
+  <%= f.label :Comentario %>
+  <%= f.text_field :comentario %>
+
+  
+  <%= f.number_field :user_id , :value => @id,style: "#{'display:none'}" %>
+
+  <div class="actions">
+    <%= f.submit "Enviar evaluacion" %>
+  </div>
+
+<%= link_to 'Back', evaluacions_path %>
+<% end %>

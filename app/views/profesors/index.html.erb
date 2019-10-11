@@ -1,4 +1,9 @@
 <% if user_signed_in? %>
+	<p class="navbar-text float-right">
+		Logged in as <strong><%= current_user.nombre %></strong>.
+		<%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+		<%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+	</p>
 	<% if 2 === @currentUser  %>
 	 <p>Profesor</p>
 	 <p>Nombre: <%= current_user.nombre %> <%= current_user.apellido %></p>
@@ -7,17 +12,15 @@
 
 	 <p>Asignaturas que imparte</p>
 	 <% @asignaturas.each do |f| %>
-	 		<% if f.user_id ===  @currentUserid %>
-	 			<p>Asignatura f.nombre</p>
-	 		<% end %>
+	 	<p>Asignatura <%=f.nombre %></p>
 	 	<p>----------------</p>
-	 	<% end %>
+	 <% end %>
 	<% else %>
 	<p>Profesor</p>
 	<p>Nombre: <%= @currentUserid.nombre %> <%= @currentUserid.apellido %></p>
 	<p>Correo: <%= @currentUserid.email %></p>
 	Nota promedio profesor: <%= @promedioevaluaciones %>
-
+	<p><%= link_to "Evaluar profesor", new_evaluacion_url(@currentUserid)%></p>
 	<% end %>
 
 <% end %>
