@@ -10732,3 +10732,19 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.0ms | Allocations: 8027)
 
 
+Started GET "/" for 127.0.0.1 at 2019-10-11 11:55:23 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 118)
+Completed 200 OK in 55ms (Views: 54.6ms | ActiveRecord: 0.0ms | Allocations: 8020)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-10-11 11:55:26 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.2ms | Allocations: 206)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 21.2ms | Allocations: 2947)
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.0ms | Allocations: 12070)
+
+
