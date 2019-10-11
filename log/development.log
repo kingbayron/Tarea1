@@ -9654,3 +9654,933 @@ Processing by ProfesorsController#index as HTML
 Completed 200 OK in 73ms (Views: 42.4ms | ActiveRecord: 3.2ms | Allocations: 11117)
 
 
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8119508980448988780)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUserCreadorToEvaluacions (20191011031010)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (22.7ms)[0m  [1m[35mALTER TABLE "evaluacions" ADD "user_creation_id" bigint[0m
+  [1m[35m (69.6ms)[0m  [1m[35mCREATE  INDEX  "index_evaluacions_on_user_creation_id" ON "evaluacions"  ("user_creation_id")[0m
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "evaluacions" ADD CONSTRAINT "fk_rails_0bfe48060d"
+FOREIGN KEY ("user_creation_id")
+  REFERENCES "user_creations" ("id")
+[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8119508980448988780)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8119508980448988780)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUserCreadorToEvaluacions (20191011031010)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.8ms)[0m  [1m[35mALTER TABLE "evaluacions" ADD "user_id" bigint[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (6.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8119508980448988780)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8119508980448988780)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUserCreadorToEvaluacions (20191011031010)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "evaluacions" ADD "user2_id" bigint[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE  INDEX  "index_evaluacions_on_user2_id" ON "evaluacions"  ("user2_id")[0m
+  [1m[35m (12.8ms)[0m  [1m[35mALTER TABLE "evaluacions" ADD CONSTRAINT "fk_rails_4df7632f03"
+FOREIGN KEY ("user2_id")
+  REFERENCES "user2s" ("id")
+[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (6.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(8119508980448988780)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8119508980448988780)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUserCreadorToEvaluacions (20191011031528)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "evaluacions" ADD "user_creation" integer[0m
+  [1m[36mprimary::SchemaMigration Create (5.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191011031528"]]
+  [1m[35m (16.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (5.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(8119508980448988780)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-11 00:19:35 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/kingbayron/Desktop/ruby/tarea2/app/controllers/profesors_controller.rb:9: syntax error, unexpected else, expecting ')'
+  	else
+  	^~~~
+/home/kingbayron/Desktop/ruby/tarea2/app/controllers/profesors_controller.rb:11: syntax error, unexpected end, expecting ')'
+  	end
+  	^~~
+/home/kingbayron/Desktop/ruby/tarea2/app/controllers/profesors_controller.rb:16: syntax error, unexpected end, expecting ')'):
+  
+app/controllers/profesors_controller.rb:9: syntax error, unexpected else, expecting ')'
+app/controllers/profesors_controller.rb:11: syntax error, unexpected end, expecting ')'
+app/controllers/profesors_controller.rb:16: syntax error, unexpected end, expecting ')'
+app/controllers/profesors_controller.rb:9: syntax error, unexpected else, expecting ')'
+app/controllers/profesors_controller.rb:11: syntax error, unexpected end, expecting ')'
+app/controllers/profesors_controller.rb:16: syntax error, unexpected end, expecting ')'
+app/controllers/profesors_controller.rb:9: syntax error, unexpected else, expecting ')'
+app/controllers/profesors_controller.rb:11: syntax error, unexpected end, expecting ')'
+app/controllers/profesors_controller.rb:16: syntax error, unexpected end, expecting ')'
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-11 00:20:04 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:4:in `index'
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:6:in `index'
+  [1m[36mEvaluacion Exists? (2.9ms)[0m  [1m[34mSELECT 1 AS one FROM "evaluacions" WHERE "evaluacions"."user_id" = $1 AND "evaluacions"."user_creation" = $2 LIMIT $3[0m  [["user_id", 1], ["user_creation", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:7:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  Rendered profesors/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 603)
+Completed 200 OK in 2544ms (Views: 2380.4ms | ActiveRecord: 44.5ms | Allocations: 1264311)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-11 00:21:08 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:4:in `index'
+  [1m[35m (5.4ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:6:in `index'
+  [1m[36mEvaluacion Exists? (3.4ms)[0m  [1m[34mSELECT 1 AS one FROM "evaluacions" WHERE "evaluacions"."user_id" = $1 AND "evaluacions"."user_creation" = $2 LIMIT $3[0m  [["user_id", 1], ["user_creation", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:7:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  Rendered profesors/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 569)
+Completed 200 OK in 101ms (Views: 46.6ms | ActiveRecord: 10.6ms | Allocations: 12382)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-11 00:22:47 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:5:in `index'
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:7:in `index'
+  [1m[36mEvaluacion Exists? (3.8ms)[0m  [1m[34mSELECT 1 AS one FROM "evaluacions" WHERE "evaluacions"."user_id" = $1 AND "evaluacions"."user_creation" = $2 LIMIT $3[0m  [["user_id", 1], ["user_creation", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:8:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  Rendered profesors/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 589)
+Completed 200 OK in 294ms (Views: 58.6ms | ActiveRecord: 32.2ms | Allocations: 23338)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-11 00:26:36 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:5:in `index'
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:7:in `index'
+  [1m[36mEvaluacion Exists? (1.9ms)[0m  [1m[34mSELECT 1 AS one FROM "evaluacions" WHERE "evaluacions"."user_id" = $1 AND "evaluacions"."user_creation" = $2 LIMIT $3[0m  [["user_id", 1], ["user_creation", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:8:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  Rendered profesors/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 598)
+Completed 200 OK in 192ms (Views: 49.2ms | ActiveRecord: 34.2ms | Allocations: 23240)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-11 00:26:46 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (6.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:7:in `index'
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:9:in `index'
+  [1m[36mEvaluacion Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "evaluacions" WHERE "evaluacions"."user_id" = $1 AND "evaluacions"."user_creation" = $2 LIMIT $3[0m  [["user_id", 1], ["user_creation", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:10:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  Rendered profesors/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 197)
+Completed 200 OK in 166ms (Views: 47.6ms | ActiveRecord: 29.2ms | Allocations: 21643)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-11 00:27:05 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+Completed 500 Internal Server Error in 757ms (ActiveRecord: 14.0ms | Allocations: 117551)
+
+
+  
+NameError (undefined local variable or method `currentuser' for #<ProfesorsController:0x00007f75428de910>
+Did you mean?  current_user
+               @current_user
+               @currentUser):
+  
+app/controllers/profesors_controller.rb:6:in `index'
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-11 00:27:40 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:5:in `index'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:7:in `index'
+  [1m[36mEvaluacion Exists? (2.5ms)[0m  [1m[34mSELECT 1 AS one FROM "evaluacions" WHERE "evaluacions"."user_id" = $1 AND "evaluacions"."user_creation" = $2 LIMIT $3[0m  [["user_id", 1], ["user_creation", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:8:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  Rendered profesors/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 583)
+Completed 200 OK in 192ms (Views: 44.2ms | ActiveRecord: 31.0ms | Allocations: 23041)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-11 00:27:46 -0300
+Processing by EvaluacionsController#new as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (8.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:19:in `new'
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 16.5ms | Allocations: 3258)
+Completed 200 OK in 145ms (Views: 94.5ms | ActiveRecord: 10.8ms | Allocations: 16649)
+
+
+Started POST "/evaluacions" for 127.0.0.1 at 2019-10-11 00:27:58 -0300
+Processing by EvaluacionsController#create as HTML
+  Parameters: {"authenticity_token"=>"Mwg3eOEsFbadgA2LNX3oxM6BKNGOjzlxzSEZKy5xfxdwn2IAO/EvARqARkKx/F/OBBuu+YVlQ4Y+o8EcaS2CcA==", "evaluacion"=>{"nota"=>"7", "comentario"=>"prueba5", "user_id"=>"1", "user_creation"=>"4"}, "commit"=>"Enviar evaluacion"}
+[31mUnpermitted parameter: :user_creation[0m
+  [1m[35m (3.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/evaluacions_controller.rb:33:in `block in create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:33:in `block in create'
+  [1m[36mEvaluacion Create (7.2ms)[0m  [1m[32mINSERT INTO "evaluacions" ("nota", "comentario", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["nota", 7], ["comentario", "prueba5"], ["user_id", 1], ["created_at", "2019-10-11 03:27:58.789559"], ["updated_at", "2019-10-11 03:27:58.789559"]]
+  ↳ app/controllers/evaluacions_controller.rb:33:in `block in create'
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/evaluacions_controller.rb:33:in `block in create'
+Redirected to http://localhost:3000/evaluacions/6
+Completed 302 Found in 46ms (ActiveRecord: 15.4ms | Allocations: 5975)
+
+
+Started GET "/evaluacions/6" for 127.0.0.1 at 2019-10-11 00:27:58 -0300
+Processing by EvaluacionsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mEvaluacion Load (0.2ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions" WHERE "evaluacions"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:70:in `set_evaluacion'
+  Rendering evaluacions/show.html.erb within layouts/application
+  Rendered evaluacions/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 297)
+Completed 200 OK in 41ms (Views: 28.3ms | ActiveRecord: 0.2ms | Allocations: 8975)
+
+
+Started GET "/evaluacions" for 127.0.0.1 at 2019-10-11 00:28:03 -0300
+Processing by EvaluacionsController#index as HTML
+  Rendering evaluacions/index.html.erb within layouts/application
+  [1m[36mEvaluacion Load (0.6ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions"[0m
+  ↳ app/views/evaluacions/index.html.erb:16
+  Rendered evaluacions/index.html.erb within layouts/application (Duration: 65.8ms | Allocations: 1562)
+Completed 200 OK in 107ms (Views: 105.0ms | ActiveRecord: 0.6ms | Allocations: 9525)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-11 00:28:09 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 454)
+Completed 200 OK in 61ms (Views: 56.0ms | ActiveRecord: 0.3ms | Allocations: 9822)
+
+
+Started GET "/alumno" for 127.0.0.1 at 2019-10-11 00:28:11 -0300
+Processing by AlumnoController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/alumno_controller.rb:3:in `index'
+  Rendering alumno/index.html.erb within layouts/application
+  [1m[36mAsignatura Load (1.0ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."curso_id" = $1[0m  [["curso_id", 1]]
+  ↳ app/views/alumno/index.html.erb:13
+  Rendered alumno/index.html.erb within layouts/application (Duration: 37.6ms | Allocations: 4367)
+Completed 200 OK in 95ms (Views: 73.9ms | ActiveRecord: 6.1ms | Allocations: 13734)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-11 00:28:15 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:5:in `index'
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:7:in `index'
+  [1m[36mEvaluacion Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "evaluacions" WHERE "evaluacions"."user_id" = $1 AND "evaluacions"."user_creation" = $2 LIMIT $3[0m  [["user_id", 1], ["user_creation", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:8:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  Rendered profesors/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 186)
+Completed 200 OK in 89ms (Views: 46.7ms | ActiveRecord: 8.4ms | Allocations: 10729)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-11 00:33:17 -0300
+Processing by EvaluacionsController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 883)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2249)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    2: 
+    3: 
+    4: <%= link_to 'Back', evaluacions_path %>
+    5: <%= form_for @evaluacion do |f| %>
+    6:   <%= f.label :Nota %>
+    7:   <%= f.number_field :nota %>
+    8: 
+  
+app/views/evaluacions/new.html.erb:5
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-11 00:33:44 -0300
+Processing by EvaluacionsController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 924)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 2289)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    2: 
+    3: 
+    4: <%= link_to 'Back', evaluacions_path %>
+    5: <%= form_for @evaluacion do |f| %>
+    6:   <%= f.label :Nota %>
+    7:   <%= f.number_field :nota %>
+    8: 
+  
+app/views/evaluacions/new.html.erb:5
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-11 00:38:00 -0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.0) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.0) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8119508980448988780)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateEvaluacions (20191011033541)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "evaluacions" ("id" bigserial primary key, "nota" integer, "comentario" text, "user_id" bigint NOT NULL, "user_creation" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_a8356ff118"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8119508980448988780)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8119508980448988780)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8119508980448988780)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-11 00:39:23 -0300
+  [1m[35m (13.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EvaluacionsController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 17.6ms | Allocations: 3400)
+Completed 200 OK in 2312ms (Views: 2256.0ms | ActiveRecord: 8.4ms | Allocations: 1258875)
+
+
+Started POST "/evaluacions" for 127.0.0.1 at 2019-10-11 00:39:37 -0300
+Processing by EvaluacionsController#create as HTML
+  Parameters: {"authenticity_token"=>"XC85ntOaNrCZaKweok+bcGQEZ5SlPlOyWA1Iec3lXcAfuGzmCUcMBx5o59cmzix6rp7hvK7UKUWrj5BOirmgpw==", "evaluacion"=>{"nota"=>"5", "comentario"=>"prueba6", "user_id"=>"", "user_creation"=>""}, "commit"=>"Enviar evaluacion"}
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 735)
+Completed 200 OK in 60ms (Views: 43.1ms | ActiveRecord: 0.0ms | Allocations: 10817)
+
+
+Started GET "/evaluacions" for 127.0.0.1 at 2019-10-11 00:40:28 -0300
+Processing by EvaluacionsController#index as HTML
+  Rendering evaluacions/index.html.erb within layouts/application
+  [1m[36mEvaluacion Load (1.1ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions"[0m
+  ↳ app/views/evaluacions/index.html.erb:16
+  Rendered evaluacions/index.html.erb within layouts/application (Duration: 42.9ms | Allocations: 6128)
+Completed 200 OK in 141ms (Views: 115.8ms | ActiveRecord: 10.5ms | Allocations: 16201)
+
+
+Started GET "/evaluacions/new.1" for 127.0.0.1 at 2019-10-11 00:40:36 -0300
+Processing by EvaluacionsController#new as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:19:in `new'
+  Rendering evaluacions/new.html.erb within layouts/application
+  Rendered evaluacions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 992)
+Completed 200 OK in 129ms (Views: 27.6ms | ActiveRecord: 16.6ms | Allocations: 18778)
+
+
+Started POST "/evaluacions" for 127.0.0.1 at 2019-10-11 00:40:44 -0300
+Processing by EvaluacionsController#create as HTML
+  Parameters: {"authenticity_token"=>"fp5bkV9TuNft3bLOWV4pOJLcZxIYMHNc5u++m9mg8vY9CQ7phY6CYGrd+Qfd354yWEbhOhPaCasVbWasnvwPkQ==", "evaluacion"=>{"nota"=>"5", "comentario"=>"prueba7", "user_id"=>"1", "user_creation"=>"4"}, "commit"=>"Enviar evaluacion"}
+  [1m[35m (10.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/evaluacions_controller.rb:32:in `block in create'
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:32:in `block in create'
+  [1m[36mEvaluacion Create (0.9ms)[0m  [1m[32mINSERT INTO "evaluacions" ("nota", "comentario", "user_id", "created_at", "updated_at", "user_creation") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nota", 5], ["comentario", "prueba7"], ["user_id", 1], ["created_at", "2019-10-11 03:40:44.783684"], ["updated_at", "2019-10-11 03:40:44.783684"], ["user_creation", 4]]
+  ↳ app/controllers/evaluacions_controller.rb:32:in `block in create'
+  [1m[35m (17.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/evaluacions_controller.rb:32:in `block in create'
+Redirected to http://localhost:3000/evaluacions/7
+Completed 302 Found in 70ms (ActiveRecord: 32.9ms | Allocations: 5191)
+
+
+Started GET "/evaluacions/7" for 127.0.0.1 at 2019-10-11 00:40:44 -0300
+Processing by EvaluacionsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mEvaluacion Load (0.3ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions" WHERE "evaluacions"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:69:in `set_evaluacion'
+  Rendering evaluacions/show.html.erb within layouts/application
+  Rendered evaluacions/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 293)
+Completed 200 OK in 45ms (Views: 29.1ms | ActiveRecord: 0.3ms | Allocations: 8973)
+
+
+Started GET "/evaluacions" for 127.0.0.1 at 2019-10-11 00:40:49 -0300
+Processing by EvaluacionsController#index as HTML
+  Rendering evaluacions/index.html.erb within layouts/application
+  [1m[36mEvaluacion Load (12.2ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions"[0m
+  ↳ app/views/evaluacions/index.html.erb:16
+  Rendered evaluacions/index.html.erb within layouts/application (Duration: 22.1ms | Allocations: 1408)
+Completed 200 OK in 90ms (Views: 76.0ms | ActiveRecord: 12.2ms | Allocations: 9234)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-11 00:41:06 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (7.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 465)
+Completed 200 OK in 87ms (Views: 69.2ms | ActiveRecord: 7.5ms | Allocations: 9877)
+
+
+Started GET "/alumno" for 127.0.0.1 at 2019-10-11 00:41:08 -0300
+Processing by AlumnoController#index as HTML
+  [1m[36mUser Load (21.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/alumno_controller.rb:3:in `index'
+  Rendering alumno/index.html.erb within layouts/application
+  [1m[36mAsignatura Load (0.4ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."curso_id" = $1[0m  [["curso_id", 1]]
+  ↳ app/views/alumno/index.html.erb:13
+  Rendered alumno/index.html.erb within layouts/application (Duration: 36.6ms | Allocations: 4407)
+Completed 200 OK in 143ms (Views: 95.5ms | ActiveRecord: 26.5ms | Allocations: 14857)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-11 00:41:10 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+Completed 500 Internal Server Error in 859ms (ActiveRecord: 4.5ms | Allocations: 108756)
+
+
+  
+NameError (undefined local variable or method `currentser' for #<ProfesorsController:0x000055ae57fd0330>
+Did you mean?  current_user
+               @currentUser
+               @current_user):
+  
+app/controllers/profesors_controller.rb:6:in `index'
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-11 00:41:52 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:7:in `index'
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:9:in `index'
+  [1m[36mEvaluacion Exists? (2.5ms)[0m  [1m[34mSELECT 1 AS one FROM "evaluacions" WHERE "evaluacions"."user_id" = $1 AND "evaluacions"."user_creation" = $2 LIMIT $3[0m  [["user_id", 1], ["user_creation", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:10:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  Rendered profesors/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 599)
+Completed 200 OK in 203ms (Views: 41.1ms | ActiveRecord: 47.4ms | Allocations: 22902)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-11 00:43:50 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (7.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:9:in `index'
+  [1m[36mEvaluacion Exists? (2.6ms)[0m  [1m[34mSELECT 1 AS one FROM "evaluacions" WHERE "evaluacions"."user_id" = $1 AND "evaluacions"."user_creation" = $2 LIMIT $3[0m  [["user_id", 1], ["user_creation", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:10:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  Rendered profesors/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 531)
+Completed 200 OK in 80ms (Views: 47.8ms | ActiveRecord: 10.4ms | Allocations: 12193)
+
+
+Started DELETE "/evaluacions/1" for 127.0.0.1 at 2019-10-11 00:47:11 -0300
+Processing by EvaluacionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yS/QNMIVozhbHkz5BIP9cOEosb3TXBEc33otHfrx7waKuIVMGMiZj9weBzCAAkp6K7I3ldi2a+ss+PUqva0SYQ==", "id"=>"1"}
+  [1m[36mEvaluacion Load (0.3ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions" WHERE "evaluacions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:69:in `set_evaluacion'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/evaluacions_controller.rb:59:in `destroy'
+  [1m[36mEvaluacion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "evaluacions" WHERE "evaluacions"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:59:in `destroy'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/evaluacions_controller.rb:59:in `destroy'
+Redirected to http://localhost:3000/evaluacions
+Completed 302 Found in 86ms (ActiveRecord: 12.6ms | Allocations: 6806)
+
+
+Started GET "/evaluacions" for 127.0.0.1 at 2019-10-11 00:47:11 -0300
+Processing by EvaluacionsController#index as HTML
+  Rendering evaluacions/index.html.erb within layouts/application
+  [1m[36mEvaluacion Load (1.5ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions"[0m
+  ↳ app/views/evaluacions/index.html.erb:16
+  Rendered evaluacions/index.html.erb within layouts/application (Duration: 13.9ms | Allocations: 1611)
+Completed 200 OK in 105ms (Views: 96.7ms | ActiveRecord: 1.5ms | Allocations: 10122)
+
+
+Started DELETE "/evaluacions/2" for 127.0.0.1 at 2019-10-11 00:47:14 -0300
+Processing by EvaluacionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"AhKzif6kgIJC59no9HSZOO0hgYe61sEADoAR3g4aMtNBhebxJHm6NcXnkiFw9S4yJ7sHr7E8u/f9AsnpSUbPtA==", "id"=>"2"}
+  [1m[36mEvaluacion Load (2.4ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions" WHERE "evaluacions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:69:in `set_evaluacion'
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/evaluacions_controller.rb:59:in `destroy'
+  [1m[36mEvaluacion Destroy (0.5ms)[0m  [1m[31mDELETE FROM "evaluacions" WHERE "evaluacions"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/evaluacions_controller.rb:59:in `destroy'
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/evaluacions_controller.rb:59:in `destroy'
+Redirected to http://localhost:3000/evaluacions
+Completed 302 Found in 50ms (ActiveRecord: 8.7ms | Allocations: 2709)
+
+
+Started GET "/evaluacions" for 127.0.0.1 at 2019-10-11 00:47:14 -0300
+Processing by EvaluacionsController#index as HTML
+  Rendering evaluacions/index.html.erb within layouts/application
+  [1m[36mEvaluacion Load (0.9ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions"[0m
+  ↳ app/views/evaluacions/index.html.erb:16
+  Rendered evaluacions/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 1161)
+Completed 200 OK in 64ms (Views: 62.2ms | ActiveRecord: 0.9ms | Allocations: 9010)
+
+
+Started DELETE "/evaluacions/3" for 127.0.0.1 at 2019-10-11 00:47:17 -0300
+Processing by EvaluacionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TPDnHDdgX8Hq96As0/WWQw6pRyPJt09v7nojplrF86UPZ7Jk7b1ldm336+VXdCFJxDPBC8JdNZgd+PuRHZkOwg==", "id"=>"3"}
+  [1m[36mEvaluacion Load (1.5ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions" WHERE "evaluacions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:69:in `set_evaluacion'
+  [1m[35m (6.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/evaluacions_controller.rb:59:in `destroy'
+  [1m[36mEvaluacion Destroy (0.7ms)[0m  [1m[31mDELETE FROM "evaluacions" WHERE "evaluacions"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/evaluacions_controller.rb:59:in `destroy'
+  [1m[35m (11.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/evaluacions_controller.rb:59:in `destroy'
+Redirected to http://localhost:3000/evaluacions
+Completed 302 Found in 65ms (ActiveRecord: 20.3ms | Allocations: 2740)
+
+
+Started GET "/evaluacions" for 127.0.0.1 at 2019-10-11 00:47:17 -0300
+Processing by EvaluacionsController#index as HTML
+  Rendering evaluacions/index.html.erb within layouts/application
+  [1m[36mEvaluacion Load (0.3ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions"[0m
+  ↳ app/views/evaluacions/index.html.erb:16
+  Rendered evaluacions/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 1037)
+Completed 200 OK in 106ms (Views: 104.5ms | ActiveRecord: 0.3ms | Allocations: 8889)
+
+
+Started DELETE "/evaluacions/5" for 127.0.0.1 at 2019-10-11 00:47:21 -0300
+Processing by EvaluacionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Hjf7nlh4/YOMGM0DUfNmP+dLsiKQTflcbfH1Hw4vk4NdoK7mgqXHNAsYhsrVctE1LdE0Cpung6uecy0oSXNu5A==", "id"=>"5"}
+  [1m[36mEvaluacion Load (9.5ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions" WHERE "evaluacions"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:69:in `set_evaluacion'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/evaluacions_controller.rb:59:in `destroy'
+  [1m[36mEvaluacion Destroy (0.4ms)[0m  [1m[31mDELETE FROM "evaluacions" WHERE "evaluacions"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/evaluacions_controller.rb:59:in `destroy'
+  [1m[35m (58.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/evaluacions_controller.rb:59:in `destroy'
+Redirected to http://localhost:3000/evaluacions
+Completed 302 Found in 91ms (ActiveRecord: 68.4ms | Allocations: 2719)
+
+
+Started GET "/evaluacions" for 127.0.0.1 at 2019-10-11 00:47:21 -0300
+Processing by EvaluacionsController#index as HTML
+  Rendering evaluacions/index.html.erb within layouts/application
+  [1m[36mEvaluacion Load (2.2ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions"[0m
+  ↳ app/views/evaluacions/index.html.erb:16
+  Rendered evaluacions/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 914)
+Completed 200 OK in 186ms (Views: 183.0ms | ActiveRecord: 2.2ms | Allocations: 8774)
+
+
+Started DELETE "/evaluacions/6" for 127.0.0.1 at 2019-10-11 00:47:25 -0300
+Processing by EvaluacionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"EApgpSzYt9nMEC8bxWwulfExJ7efUjiDFbs8/7+6aWFTnTXd9gWNbksQZNJB7ZmfO6uhn5S4QnTmOeTI+OaUBg==", "id"=>"6"}
+  [1m[36mEvaluacion Load (0.4ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions" WHERE "evaluacions"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:69:in `set_evaluacion'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/evaluacions_controller.rb:59:in `destroy'
+  [1m[36mEvaluacion Destroy (1.0ms)[0m  [1m[31mDELETE FROM "evaluacions" WHERE "evaluacions"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/evaluacions_controller.rb:59:in `destroy'
+  [1m[35m (39.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/evaluacions_controller.rb:59:in `destroy'
+Redirected to http://localhost:3000/evaluacions
+Completed 302 Found in 56ms (ActiveRecord: 41.3ms | Allocations: 2719)
+
+
+Started GET "/evaluacions" for 127.0.0.1 at 2019-10-11 00:47:25 -0300
+Processing by EvaluacionsController#index as HTML
+  Rendering evaluacions/index.html.erb within layouts/application
+  [1m[36mEvaluacion Load (5.0ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions"[0m
+  ↳ app/views/evaluacions/index.html.erb:16
+  Rendered evaluacions/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 791)
+Completed 200 OK in 32ms (Views: 25.6ms | ActiveRecord: 5.0ms | Allocations: 8623)
+
+
+Started POST "/evaluacions" for 127.0.0.1 at 2019-10-11 00:50:32 -0300
+  
+SyntaxError (/home/kingbayron/Desktop/ruby/tarea2/app/controllers/evaluacions_controller.rb:33: syntax error, unexpected tSYMBEG
+...html { redirect_to profesores.:id, notice: 'Evaluacion was s...
+...                              ^
+/home/kingbayron/Desktop/ruby/tarea2/app/controllers/evaluacions_controller.rb:33: syntax error, unexpected '}', expecting end
+...on was successfully created.' }
+...                              ^):
+  
+app/controllers/evaluacions_controller.rb:33: syntax error, unexpected tSYMBEG
+app/controllers/evaluacions_controller.rb:33: syntax error, unexpected '}', expecting end
+app/controllers/evaluacions_controller.rb:33: syntax error, unexpected tSYMBEG
+app/controllers/evaluacions_controller.rb:33: syntax error, unexpected '}', expecting end
+app/controllers/evaluacions_controller.rb:33: syntax error, unexpected tSYMBEG
+app/controllers/evaluacions_controller.rb:33: syntax error, unexpected '}', expecting end
+Started POST "/evaluacions" for 127.0.0.1 at 2019-10-11 00:51:13 -0300
+Processing by EvaluacionsController#create as HTML
+  Parameters: {"authenticity_token"=>"fp5bkV9TuNft3bLOWV4pOJLcZxIYMHNc5u++m9mg8vY9CQ7phY6CYGrd+Qfd354yWEbhOhPaCasVbWasnvwPkQ==", "evaluacion"=>{"nota"=>"6", "comentario"=>"prueba8", "user_id"=>"1", "user_creation"=>"4"}, "commit"=>"Enviar evaluacion"}
+  [1m[35m (4.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/evaluacions_controller.rb:32:in `block in create'
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:32:in `block in create'
+  [1m[36mEvaluacion Create (0.7ms)[0m  [1m[32mINSERT INTO "evaluacions" ("nota", "comentario", "user_id", "created_at", "updated_at", "user_creation") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nota", 6], ["comentario", "prueba8"], ["user_id", 1], ["created_at", "2019-10-11 03:51:14.347458"], ["updated_at", "2019-10-11 03:51:14.347458"], ["user_creation", 4]]
+  ↳ app/controllers/evaluacions_controller.rb:32:in `block in create'
+  [1m[35m (66.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/evaluacions_controller.rb:32:in `block in create'
+Redirected to http://localhost:3000/profesores.id
+Completed 302 Found in 328ms (ActiveRecord: 91.8ms | Allocations: 18162)
+
+
+Started GET "/profesores.id" for 127.0.0.1 at 2019-10-11 00:51:14 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"id"}
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:7:in `index'
+Completed 404 Not Found in 10ms (ActiveRecord: 5.5ms | Allocations: 2196)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=id):
+  
+app/controllers/profesors_controller.rb:7:in `index'
+Started POST "/evaluacions" for 127.0.0.1 at 2019-10-11 00:52:44 -0300
+Processing by EvaluacionsController#create as HTML
+  Parameters: {"authenticity_token"=>"fp5bkV9TuNft3bLOWV4pOJLcZxIYMHNc5u++m9mg8vY9CQ7phY6CYGrd+Qfd354yWEbhOhPaCasVbWasnvwPkQ==", "evaluacion"=>{"nota"=>"6", "comentario"=>"prueba8", "user_id"=>"1", "user_creation"=>"4"}, "commit"=>"Enviar evaluacion"}
+  [1m[35m (7.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/evaluacions_controller.rb:32:in `block in create'
+  [1m[36mUser Load (9.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:32:in `block in create'
+  [1m[36mEvaluacion Create (1.7ms)[0m  [1m[32mINSERT INTO "evaluacions" ("nota", "comentario", "user_id", "created_at", "updated_at", "user_creation") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nota", 6], ["comentario", "prueba8"], ["user_id", 1], ["created_at", "2019-10-11 03:52:44.988150"], ["updated_at", "2019-10-11 03:52:44.988150"], ["user_creation", 4]]
+  ↳ app/controllers/evaluacions_controller.rb:32:in `block in create'
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/evaluacions_controller.rb:32:in `block in create'
+Redirected to http://localhost:3000/profesores
+Completed 302 Found in 194ms (ActiveRecord: 46.3ms | Allocations: 18113)
+
+
+Started GET "/profesores" for 127.0.0.1 at 2019-10-11 00:52:45 -0300
+Processing by ProfesorsController#todos as HTML
+  Rendering profesors/todos.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."tipouser" = $1[0m  [["tipouser", 2]]
+  ↳ app/views/profesors/todos.html.erb:1
+  Rendered profesors/todos.html.erb within layouts/application (Duration: 7.9ms | Allocations: 875)
+Completed 200 OK in 43ms (Views: 41.6ms | ActiveRecord: 0.3ms | Allocations: 9095)
+
+
+Started GET "/alumno.1" for 127.0.0.1 at 2019-10-11 00:52:57 -0300
+Processing by AlumnoController#index as 
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/alumno_controller.rb:3:in `index'
+  Rendering alumno/index.html.erb within layouts/application
+  [1m[36mAsignatura Load (0.4ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."curso_id" = $1[0m  [["curso_id", 1]]
+  ↳ app/views/alumno/index.html.erb:13
+  Rendered alumno/index.html.erb within layouts/application (Duration: 23.4ms | Allocations: 4363)
+Completed 200 OK in 105ms (Views: 64.6ms | ActiveRecord: 7.1ms | Allocations: 14882)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-11 00:53:11 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:7:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:9:in `index'
+  [1m[36mEvaluacion Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "evaluacions" WHERE "evaluacions"."user_id" = $1 AND "evaluacions"."user_creation" = $2 LIMIT $3[0m  [["user_id", 1], ["user_creation", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:10:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  Rendered profesors/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 119)
+Completed 200 OK in 75ms (Views: 39.1ms | ActiveRecord: 2.4ms | Allocations: 10827)
+
+
+Started POST "/evaluacions" for 127.0.0.1 at 2019-10-11 00:53:27 -0300
+Processing by EvaluacionsController#create as HTML
+  Parameters: {"authenticity_token"=>"fp5bkV9TuNft3bLOWV4pOJLcZxIYMHNc5u++m9mg8vY9CQ7phY6CYGrd+Qfd354yWEbhOhPaCasVbWasnvwPkQ==", "evaluacion"=>{"nota"=>"5", "comentario"=>"prueba9", "user_id"=>"1", "user_creation"=>"4"}, "commit"=>"Enviar evaluacion"}
+  [1m[35m (2.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/evaluacions_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:32:in `block in create'
+  [1m[36mEvaluacion Create (1.9ms)[0m  [1m[32mINSERT INTO "evaluacions" ("nota", "comentario", "user_id", "created_at", "updated_at", "user_creation") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nota", 5], ["comentario", "prueba9"], ["user_id", 1], ["created_at", "2019-10-11 03:53:27.354531"], ["updated_at", "2019-10-11 03:53:27.354531"], ["user_creation", 4]]
+  ↳ app/controllers/evaluacions_controller.rb:32:in `block in create'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/evaluacions_controller.rb:32:in `block in create'
+Redirected to http://localhost:3000/profesores
+Completed 302 Found in 40ms (ActiveRecord: 5.9ms | Allocations: 3898)
+
+
+Started GET "/profesores" for 127.0.0.1 at 2019-10-11 00:53:27 -0300
+Processing by ProfesorsController#todos as HTML
+  Rendering profesors/todos.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."tipouser" = $1[0m  [["tipouser", 2]]
+  ↳ app/views/profesors/todos.html.erb:1
+  Rendered profesors/todos.html.erb within layouts/application (Duration: 1.8ms | Allocations: 733)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.2ms | Allocations: 8625)
+
+
+Started POST "/evaluacions" for 127.0.0.1 at 2019-10-11 00:54:00 -0300
+Processing by EvaluacionsController#create as HTML
+  Parameters: {"authenticity_token"=>"fp5bkV9TuNft3bLOWV4pOJLcZxIYMHNc5u++m9mg8vY9CQ7phY6CYGrd+Qfd354yWEbhOhPaCasVbWasnvwPkQ==", "evaluacion"=>{"nota"=>"5", "comentario"=>"prueba9", "user_id"=>"1", "user_creation"=>"4"}, "commit"=>"Enviar evaluacion"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/evaluacions_controller.rb:32:in `block in create'
+  [1m[36mUser Load (8.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:32:in `block in create'
+  [1m[36mEvaluacion Create (0.4ms)[0m  [1m[32mINSERT INTO "evaluacions" ("nota", "comentario", "user_id", "created_at", "updated_at", "user_creation") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nota", 5], ["comentario", "prueba9"], ["user_id", 1], ["created_at", "2019-10-11 03:54:01.055134"], ["updated_at", "2019-10-11 03:54:01.055134"], ["user_creation", 4]]
+  ↳ app/controllers/evaluacions_controller.rb:32:in `block in create'
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/evaluacions_controller.rb:32:in `block in create'
+Redirected to http://localhost:3000/evaluacions/11
+Completed 302 Found in 181ms (ActiveRecord: 35.9ms | Allocations: 18180)
+
+
+Started GET "/evaluacions/11" for 127.0.0.1 at 2019-10-11 00:54:01 -0300
+Processing by EvaluacionsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mEvaluacion Load (0.2ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions" WHERE "evaluacions"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:69:in `set_evaluacion'
+  Rendering evaluacions/show.html.erb within layouts/application
+  Rendered evaluacions/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 293)
+Completed 200 OK in 56ms (Views: 50.8ms | ActiveRecord: 0.2ms | Allocations: 9108)
+
+
+Started GET "/evaluacions/11" for 127.0.0.1 at 2019-10-11 00:57:40 -0300
+Processing by EvaluacionsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mEvaluacion Load (3.4ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions" WHERE "evaluacions"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:69:in `set_evaluacion'
+  Rendering evaluacions/show.html.erb within layouts/application
+  Rendered evaluacions/show.html.erb within layouts/application (Duration: 920.1ms | Allocations: 162984)
+Completed 500 Internal Server Error in 1006ms (ActiveRecord: 30.2ms | Allocations: 170408)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `root' for #<#<Class:0x000055ae58158978>:0x000055ae58162c20>):
+    16: </p>
+    17: 
+    18: <%= link_to 'Edit', edit_evaluacion_path(@evaluacion) %> |
+    19: <%= link_to 'Back', root %>
+  
+app/views/evaluacions/show.html.erb:19
+Started GET "/evaluacions/11" for 127.0.0.1 at 2019-10-11 00:57:54 -0300
+Processing by EvaluacionsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mEvaluacion Load (9.8ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions" WHERE "evaluacions"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/evaluacions_controller.rb:69:in `set_evaluacion'
+  Rendering evaluacions/show.html.erb within layouts/application
+  Rendered evaluacions/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 282)
+Completed 200 OK in 149ms (Views: 127.3ms | ActiveRecord: 9.8ms | Allocations: 9799)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-11 00:58:08 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 462)
+Completed 200 OK in 116ms (Views: 52.1ms | ActiveRecord: 18.3ms | Allocations: 17941)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-10-11 00:58:10 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iWDptqzLiRT3vPI9qVNiouZlcWCM0X4ESVcT+OLV11jK97zOdhazo3C8ufQt0tWoLP/3SIc7BPO61cvPpYkqPw=="}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 33ms (ActiveRecord: 2.8ms | Allocations: 2887)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-11 00:58:10 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 122)
+Completed 200 OK in 43ms (Views: 35.8ms | ActiveRecord: 0.0ms | Allocations: 8046)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-10-11 00:58:13 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 27.0ms | Allocations: 606)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 76.9ms | Allocations: 5034)
+Completed 200 OK in 148ms (Views: 147.0ms | ActiveRecord: 0.0ms | Allocations: 14468)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-10-11 00:58:17 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"7RLwQRiXAckJD9IleX3WB2FW7T7V1V/QiQJUmwkANvkaKCMEsP8ljmqV8wdxdWtRJWIBpq6sINqxs+a32z8YXw==", "user"=>{"email"=>"kingbayron@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "kingbayron@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 441ms (ActiveRecord: 0.5ms | Allocations: 4905)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-11 00:58:17 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 160)
+Completed 200 OK in 33ms (Views: 20.7ms | ActiveRecord: 0.2ms | Allocations: 8878)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-11 00:58:21 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:7:in `index'
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:9:in `index'
+  [1m[36mEvaluacion Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "evaluacions" WHERE "evaluacions"."user_id" = $1 AND "evaluacions"."user_creation" = $2 LIMIT $3[0m  [["user_id", 1], ["user_creation", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:10:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  [1m[36mAsignatura Load (0.6ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/profesors/index.html.erb:14
+  Rendered profesors/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 4407)
+Completed 200 OK in 89ms (Views: 55.9ms | ActiveRecord: 12.8ms | Allocations: 16784)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-11 00:59:51 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:7:in `index'
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:9:in `index'
+  [1m[36mEvaluacion Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "evaluacions" WHERE "evaluacions"."user_id" = $1 AND "evaluacions"."user_creation" = $2 LIMIT $3[0m  [["user_id", 1], ["user_creation", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:10:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  [1m[36mAsignatura Load (5.7ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/profesors/index.html.erb:14
+  [1m[36mEvaluacion Load (0.2ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions" WHERE "evaluacions"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/profesors/index.html.erb:19
+  Rendered profesors/index.html.erb within layouts/application (Duration: 15.9ms | Allocations: 1959)
+Completed 200 OK in 91ms (Views: 50.5ms | ActiveRecord: 12.5ms | Allocations: 13658)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-11 01:00:18 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (7.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:7:in `index'
+  [1m[35m (6.1ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:9:in `index'
+  [1m[36mEvaluacion Exists? (4.4ms)[0m  [1m[34mSELECT 1 AS one FROM "evaluacions" WHERE "evaluacions"."user_id" = $1 AND "evaluacions"."user_creation" = $2 LIMIT $3[0m  [["user_id", 1], ["user_creation", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:10:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  [1m[36mAsignatura Load (4.1ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/profesors/index.html.erb:14
+  [1m[36mEvaluacion Load (0.2ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions" WHERE "evaluacions"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/profesors/index.html.erb:20
+  Rendered profesors/index.html.erb within layouts/application (Duration: 13.2ms | Allocations: 1955)
+Completed 200 OK in 110ms (Views: 54.2ms | ActiveRecord: 22.6ms | Allocations: 13656)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-11 01:00:31 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:7:in `index'
+  [1m[35m (5.0ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:9:in `index'
+  [1m[36mEvaluacion Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "evaluacions" WHERE "evaluacions"."user_id" = $1 AND "evaluacions"."user_creation" = $2 LIMIT $3[0m  [["user_id", 1], ["user_creation", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:10:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  [1m[36mAsignatura Load (0.3ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/profesors/index.html.erb:15
+  [1m[36mEvaluacion Load (0.3ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions" WHERE "evaluacions"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/profesors/index.html.erb:21
+  Rendered profesors/index.html.erb within layouts/application (Duration: 12.7ms | Allocations: 1983)
+Completed 200 OK in 104ms (Views: 53.2ms | ActiveRecord: 15.4ms | Allocations: 13839)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-11 01:00:57 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:9:in `index'
+  [1m[36mEvaluacion Exists? (3.6ms)[0m  [1m[34mSELECT 1 AS one FROM "evaluacions" WHERE "evaluacions"."user_id" = $1 AND "evaluacions"."user_creation" = $2 LIMIT $3[0m  [["user_id", 1], ["user_creation", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:10:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  [1m[36mAsignatura Load (1.9ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/profesors/index.html.erb:15
+  [1m[36mEvaluacion Load (0.7ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions" WHERE "evaluacions"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/profesors/index.html.erb:21
+  Rendered profesors/index.html.erb within layouts/application (Duration: 16.8ms | Allocations: 1957)
+Completed 200 OK in 102ms (Views: 54.2ms | ActiveRecord: 12.4ms | Allocations: 13646)
+
+

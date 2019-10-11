@@ -15,8 +15,8 @@ class EvaluacionsController < ApplicationController
   # GET /evaluacions/new
   def new
     @evaluacion = Evaluacion.new
-    @qaz=23
     @id = params[:id]
+    @iduser= current_user.id
   end
 
   # GET /evaluacions/1/edit
@@ -27,8 +27,7 @@ class EvaluacionsController < ApplicationController
   # POST /evaluacions.json
   def create
     @evaluacion = Evaluacion.new(evaluacion_params)
-    
-    @id = params[:id]
+
     respond_to do |format|
       if @evaluacion.save
         format.html { redirect_to @evaluacion, notice: 'Evaluacion was successfully created.' }
@@ -72,6 +71,6 @@ class EvaluacionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def evaluacion_params
-      params.require(:evaluacion).permit(:nota, :comentario, :user_id)
+      params.require(:evaluacion).permit(:nota, :comentario, :user_id, :user_creation)
     end
 end

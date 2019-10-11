@@ -10,17 +10,30 @@
 	 <p>Correo: <%= current_user.email %></p>
 
 
-	 <p>Asignaturas que imparte</p>
+	 <h2>Asignaturas que imparte</h2>
+	 <p>----------------</p>
 	 <% @asignaturas.each do |f| %>
 	 	<p>Asignatura <%=f.nombre %></p>
+	 	<p>----------------</p>
+	 <% end %>
+	 <h2>Evaluaciones recividas</h2>
+	 <p>----------------</p>
+	 <% @evaluaciones.each do |f| %>
+	 	<p>Nota <%=f.nota %></p>
+	 	<p>Comentario <%=f.comentario %></p>
 	 	<p>----------------</p>
 	 <% end %>
 	<% else %>
 	<p>Profesor</p>
 	<p>Nombre: <%= @currentUserid.nombre %> <%= @currentUserid.apellido %></p>
+
 	<p>Correo: <%= @currentUserid.email %></p>
 	Nota promedio profesor: <%= @promedioevaluaciones %>
+	<% if 1===@evaluacionlista %>
+		<p>Usted ya realizo la evauacion del profesor</p>
+	<%else%>
 	<p><%= link_to "Evaluar profesor", new_evaluacion_url(@currentUserid)%></p>
+	<%end%>
 	<% end %>
 
 <% end %>
