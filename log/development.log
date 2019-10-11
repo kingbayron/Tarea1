@@ -10584,3 +10584,151 @@ Processing by ProfesorsController#index as HTML
 Completed 200 OK in 102ms (Views: 54.2ms | ActiveRecord: 12.4ms | Allocations: 13646)
 
 
+Started GET "/" for 127.0.0.1 at 2019-10-11 10:41:54 -0300
+  [1m[35m (19.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 746)
+Completed 200 OK in 1149ms (Views: 1067.9ms | ActiveRecord: 0.0ms | Allocations: 1252206)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-10-11 10:41:59 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.7ms | Allocations: 602)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 141.2ms | Allocations: 9021)
+Completed 200 OK in 292ms (Views: 152.0ms | ActiveRecord: 114.4ms | Allocations: 27744)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-10-11 10:42:02 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"GFMKtNhzH5blAlLQoD+o4tyW2lZgut1DsjwZDSyoTnrFKMXKmDCFMoudPwtuBblzk9Fs2eXS9Xc8idZ3+/LbjA==", "user"=>{"email"=>"correo1@correo.cl", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (62.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "correo1@correo.cl"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 338ms (ActiveRecord: 62.9ms | Allocations: 7509)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-11 10:42:02 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 158)
+Completed 200 OK in 40ms (Views: 27.0ms | ActiveRecord: 0.2ms | Allocations: 8878)
+
+
+Started GET "/alumno" for 127.0.0.1 at 2019-10-11 10:42:09 -0300
+Processing by AlumnoController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/alumno_controller.rb:3:in `index'
+  Rendering alumno/index.html.erb within layouts/application
+  [1m[36mAsignatura Load (33.1ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."curso_id" = $1[0m  [["curso_id", 1]]
+  ↳ app/views/alumno/index.html.erb:13
+  Rendered alumno/index.html.erb within layouts/application (Duration: 46.8ms | Allocations: 4406)
+Completed 200 OK in 92ms (Views: 26.6ms | ActiveRecord: 36.9ms | Allocations: 15603)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-11 10:42:11 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:7:in `index'
+  [1m[35m (49.6ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:9:in `index'
+  [1m[36mEvaluacion Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "evaluacions" WHERE "evaluacions"."user_id" = $1 AND "evaluacions"."user_creation" = $2 LIMIT $3[0m  [["user_id", 1], ["user_creation", 4], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:10:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  Rendered profesors/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 630)
+Completed 200 OK in 141ms (Views: 31.9ms | ActiveRecord: 52.8ms | Allocations: 13006)
+
+
+Started GET "/curso" for 127.0.0.1 at 2019-10-11 10:42:21 -0300
+Processing by HomeController#curso as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:10:in `curso'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "asignaturas"."id" FROM "asignaturas" WHERE "asignaturas"."curso_id" = $1[0m  [["curso_id", 1]]
+  ↳ app/controllers/home_controller.rb:11:in `curso'
+  Rendering home/curso.html.erb within layouts/application
+  [1m[36mPost Load (35.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."asignatura_id" = $1[0m  [["asignatura_id", 1]]
+  ↳ app/views/home/curso.html.erb:8
+  Rendered home/curso.html.erb within layouts/application (Duration: 50.6ms | Allocations: 4951)
+Completed 200 OK in 73ms (Views: 27.3ms | ActiveRecord: 38.8ms | Allocations: 15571)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-10-11 10:42:29 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BTUXf1SQxTg+YZtNF0v63TYASJBv0wG9Fnh0DJ/AS1KS23iEiniY8VKPR5ZUcoR+UfrbcmHMPR7KNHf670YOEQ=="}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 60ms (ActiveRecord: 1.0ms | Allocations: 2903)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-11 10:42:29 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 120)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms | Allocations: 8034)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-10-11 10:42:30 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 132)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 18.7ms | Allocations: 1057)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.0ms | Allocations: 9129)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-10-11 10:42:33 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"CwFpoV9N2HX+hHfqxiITP8m+/e8nYsv7p1uQN8GHLrFdc4BZ955Z3rsTKuyOlG//eNOzKD/SnWwzSLIvLx/EjQ==", "user"=>{"email"=>"kingbayron@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "kingbayron@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 167ms (ActiveRecord: 2.7ms | Allocations: 2756)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-11 10:42:34 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 152)
+Completed 200 OK in 32ms (Views: 22.7ms | ActiveRecord: 1.1ms | Allocations: 8866)
+
+
+Started GET "/profesores.1" for 127.0.0.1 at 2019-10-11 10:42:54 -0300
+Processing by ProfesorsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG("evaluacions"."nota") FROM "evaluacions"[0m
+  ↳ app/controllers/profesors_controller.rb:9:in `index'
+  [1m[36mEvaluacion Exists? (4.3ms)[0m  [1m[34mSELECT 1 AS one FROM "evaluacions" WHERE "evaluacions"."user_id" = $1 AND "evaluacions"."user_creation" = $2 LIMIT $3[0m  [["user_id", 1], ["user_creation", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profesors_controller.rb:10:in `index'
+  Rendering profesors/index.html.erb within layouts/application
+  [1m[36mAsignatura Load (0.3ms)[0m  [1m[34mSELECT "asignaturas".* FROM "asignaturas" WHERE "asignaturas"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/profesors/index.html.erb:15
+  [1m[36mEvaluacion Load (0.2ms)[0m  [1m[34mSELECT "evaluacions".* FROM "evaluacions" WHERE "evaluacions"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/profesors/index.html.erb:21
+  Rendered profesors/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 5340)
+Completed 200 OK in 37ms (Views: 22.9ms | ActiveRecord: 7.0ms | Allocations: 15937)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-10-11 10:43:57 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0hZ0aMhEEJL5h8okTNbq/ZTem4bNflQ9GFy9Fh0LPpOKeVVDF8xD7R8csKHieSi2YsLQZN0skmM8QaJip5APlw=="}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 2.7ms | Allocations: 2151)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-11 10:43:57 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 118)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.0ms | Allocations: 8027)
+
+
