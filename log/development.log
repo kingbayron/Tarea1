@@ -10748,3 +10748,20 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.0ms | Allocations: 12070)
 
 
+Started GET "/" for 127.0.0.1 at 2019-10-11 12:28:47 -0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 575)
+Completed 200 OK in 1783ms (Views: 1748.9ms | ActiveRecord: 0.0ms | Allocations: 1250698)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-10-11 12:28:58 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 207)
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 516)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 29.0ms | Allocations: 5808)
+Completed 200 OK in 113ms (Views: 68.0ms | ActiveRecord: 9.7ms | Allocations: 24144)
+
+
